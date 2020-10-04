@@ -230,6 +230,17 @@ span.hov:hover {
   transform: translateX(0);
 }
 
+.skills-info .logo {
+  height: 40px;
+  width: auto;
+  margin-bottom : 1.5rem;
+}
+
+.skills-info .logo img {
+  height: 100%;
+  width: auto;
+}
+
 .skills-info .card {
   position: relative;
   display: flex;
@@ -317,7 +328,7 @@ span.hov:hover {
     width: 80%;
     height: auto;
     margin-top: 150px;
-    margin-left: 0;
+    margin-left: 40px;
   }
   .skills {
     flex-direction: column;
@@ -374,7 +385,9 @@ span.hov:hover {
   }
 
   .skills-info {
-    margin-top: 40px;
+    height : calc(100vh - 40px);
+    /* margin-top: 40px; */
+    bottom : 0;
   }
   .skills-info .card {
     width: 70%;
@@ -389,7 +402,7 @@ span.hov:hover {
     align-items: center;
   }
   .text {
-    /* margin: 20px; */
+    margin-left: 0px;
     font-size: 1rem;
   }
   .skills-info .card {
