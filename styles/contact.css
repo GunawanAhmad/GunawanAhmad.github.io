@@ -205,6 +205,9 @@ form button {
     flex-direction: column;
     padding: 0;
   }
+  .main {
+    flex-direction: column;
+  }
   .text {
     align-items: center;
     margin: 100px 0 0 0;
