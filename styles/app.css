@@ -151,10 +151,56 @@
     animation: slide 500ms linear;
     animation-delay: 200ms;
   }
+
+  .trans-back {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--second-color);
+    z-index: 99;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    transform: translateX(-100%);
+    transition: transform 800ms ease;
+  }
+  .trans-back.show {
+    transform: translateX(0);
+  }
+
+  .trans-back img {
+    height: 40px;
+    text-align: center;
+  }
+  
+  .trans-back p {
+    margin: .5rem 0;
+  }
+
+  .trans-back .loadbar {
+    width: 250px;
+  }
+  .trans-back .loadbar .progress {
+    width: 0;
+    height: 4px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+  }
+  .trans-back.show .loadbar .progress {
+    width: 100%;
+    transition: width 700ms ease;
+    transition-delay: 800ms;
+  }
   
   #logo path:nth-child(1) {
     stroke-dasharray: 1128px;
-    stroke-dashoffset: 1129px;
+    stroke-dashoffset: 1128px;
     animation: line-dash 2s ease forwards;
   }
   
@@ -170,22 +216,22 @@
   }
   #logo path:nth-child(4) {
     stroke-dasharray: 718px;
-    stroke-dashoffset: 719px;
+    stroke-dashoffset: 718px;
     animation: line-dash 2s ease forwards 0.9s;
   }
   #logo path:nth-child(5) {
     stroke-dasharray: 784px;
-    stroke-dashoffset: 785px;
+    stroke-dashoffset: 784px;
     animation: line-dash 2s ease forwards 1.2s;
   }
   #logo path:nth-child(6) {
     stroke-dasharray: 1084px;
-    stroke-dashoffset: 1085px;
+    stroke-dashoffset: 1084px;
     animation: line-dash 2s ease forwards 1.5s;
   }
   #logo path:nth-child(7) {
     stroke-dasharray: 664px;
-    stroke-dashoffset: 665px;
+    stroke-dashoffset: 664px;
     animation: line-dash 2s ease forwards 1.8s;
   }
   
@@ -229,7 +275,7 @@
     }
   }
   
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1024px) {
     .view {
       margin: 0px 0 0 0px;
       /* padding: 60px 0; */

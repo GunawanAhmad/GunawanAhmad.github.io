@@ -109,7 +109,7 @@ span.hov:hover {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .text {
     width: 90%;
     font-size: 1.2rem;

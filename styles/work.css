@@ -7,7 +7,26 @@
   overflow-y: hidden;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.work h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 7rem;
+  text-align: center;
+}
+
+.work h1::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--second-color);
+  position: absolute;
+  bottom: -1rem;
 }
 
 .work-list {
@@ -155,9 +174,9 @@
   overflow: hidden;
 }
 
-.tool .btn a {
-  /* border-left: 1px solid var(--main-color); */
-}
+/* .tool .btn a {
+  border-left: 1px solid var(--main-color);
+} */
 .tool .btn button {
   /* border-right: 1px solid var(--main-color); */
   display: none;
@@ -259,7 +278,7 @@
   transform: translateY(-100%);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
   .list {
     width: 60%;
   }
@@ -271,5 +290,8 @@
 @media only screen and (max-width: 700px) {
   .list {
     width: 80%;
+  }
+  .work h1 {
+    font-size: 1.2rem;
   }
 }
