@@ -108,13 +108,7 @@
     transform: rotateZ(70deg);
     margin-right: -10px;
   }
-  /* .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    z-index: 99;
-  } */
+
   
   .view {
     --main-color: var(--main);
@@ -130,7 +124,8 @@
     display: flex;
     background-color: var(--main-color);
     justify-content: space-between;
-    overflow: hidden;
+    overflow-x: hidden;
+    /* border: 1px solid red; */
   }
   
   .fade-enter {

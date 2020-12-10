@@ -8,7 +8,9 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
-  width: 65px;
+  width: 2.5vw;
+  min-width: 60px;
+  max-width: 150px;
   z-index: 100;
   background-color: var(--second-color);
   color: blue;
@@ -30,9 +32,16 @@ nav {
   margin: 2vh 0;
   /* cursor: pointer; */
   /* background: red; */
-  width: 65px;
+  width: 100%;
   height: auto;
   text-align: center;
+
+}
+
+.direct > div a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
 }
 
 .logo {
@@ -44,7 +53,9 @@ nav {
 }
 
 .logo img {
-  height: 40px;
+  height: 3vw;
+  min-height: 35px;
+  max-height: 150px;
   /* width: 30px; */
 }
 
@@ -150,6 +161,7 @@ a {
 @media only screen and (max-width: 1024px) {
   nav {
     width: 100%;
+    max-width: 100vw;
     height: 50px;
     flex-direction: row;
     padding: 0 2rem;

@@ -23,7 +23,6 @@
   color: var(--second-color);
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
-  /* border: 1px solid red; */
   width: 40%;
 }
 .text p {
@@ -58,18 +57,18 @@
   /* text-decoration: underline; */
 }
 
-.text p a:nth-child(1)::before {
+.text p .linkedln::before {
   content: "Linkedln";
 }
-.text p a:nth-child(2)::before {
+.text p .contact::before {
   content: "contact me.";
 }
 
-.text p a:nth-child(1):hover:before {
+.text p .linkedln:hover:before {
   opacity: 1;
   transform: translateX(0);
 }
-.text p a:nth-child(2):hover:before {
+.text p .contact:hover:before {
   opacity: 1;
   transform: translateX(0);
 }
@@ -213,8 +212,12 @@ span.hov:hover {
 }
 
 .skills-info {
-  position: absolute;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
   /* padding: 0; */
   background: var(--second-color);
@@ -225,6 +228,8 @@ span.hov:hover {
   transform: translateX(100%);
   transition: transform 1s ease;
   z-index: 10;
+  
+  /* border: 1px solid red; */
 }
 
 .skills-info.show {
@@ -386,7 +391,7 @@ span.hov:hover {
   }
 
   .skills-info {
-    height : calc(100vh - 40px);
+    margin-top: 50px;
     /* margin-top: 40px; */
     bottom : 0;
   }
