@@ -115,7 +115,8 @@
     --second-color: var(--second);
     width: 100%;
     background-color: var(--main);
-    margin: 0 0 0 8vh;
+    /* margin: 0 0 0 0; */
+    padding-left: 50px;
     height: 100vh;
     position: relative;
   }
@@ -274,6 +275,7 @@
     .view {
       margin: 0px 0 0 0px;
       /* padding: 60px 0; */
+      padding-left: 0;
     }
     .top {
       top: 60px;
