@@ -242,7 +242,7 @@ nav .direct:hover .cursor {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--second-color);
 }
 
 @keyframes line-dash {
