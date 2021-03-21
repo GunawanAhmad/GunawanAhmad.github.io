@@ -140,4 +140,8 @@ span.hov:hover {
   .work .img {
     margin-top: 2rem;
   }
+
+  .work .work-title {
+    font-size: 1.6rem;
+  }
 }
