@@ -88,6 +88,12 @@
   transition: transform 250ms ease;
 }
 
+.mobile-img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
 .img:hover img {
   transform: scale(1.2);
 }
@@ -132,16 +138,23 @@ span.hov:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
   }
   .work .information {
     width: 100%;
   }
 
   .work .img {
-    margin-top: 2rem;
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+    margin-top: 1rem;
   }
 
   .work .work-title {
     font-size: 1.6rem;
+    margin-top: 1rem;
   }
 }

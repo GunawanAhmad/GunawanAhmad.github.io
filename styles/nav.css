@@ -19,9 +19,8 @@ nav {
   font-family: "Montserrat", sans-serif;
 }
 
-
 /* transition: 50ms ease-in-out;  */
-/* } */ 
+/* } */
 
 .direct {
   display: flex;
@@ -35,7 +34,6 @@ nav {
   width: 100%;
   height: auto;
   text-align: center;
-
 }
 
 .direct > div a {
@@ -64,7 +62,8 @@ nav {
   /* border: 1px solid red; */
 }
 
-.direct > div:hover:after,.mob-ver > div:hover:after {
+.direct > div:hover:after,
+.mob-ver > div:hover:after {
   content: attr(data-content);
   pointer-events: none;
   position: absolute;
@@ -81,8 +80,6 @@ nav {
   animation: fade 150ms ease-in-out alternate;
   z-index: 999;
 }
-
-
 
 a {
   text-decoration: none;
@@ -146,8 +143,6 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-
-
 @keyframes fade {
   0% {
     opacity: 0;
@@ -189,6 +184,8 @@ a {
     padding: 0px 40px;
     transition: transform 250ms ease-in-out;
     transform: translateX(100%);
+    width: 100vw;
+    left: 0;
   }
 
   .mob-ver.slide {
@@ -198,4 +195,3 @@ a {
     position: relative;
   }
 }
-
