@@ -13,7 +13,7 @@ nav {
   max-width: 150px;
   z-index: 100;
   background-color: var(--second-color);
-  color: blue;
+  /* color: blue; */
   padding: 40px 0;
   /* box-shadow: 0 1px 3px 2px rgb(168, 168, 168); */
   font-family: "Montserrat", sans-serif;
@@ -23,23 +23,34 @@ nav {
 /* } */
 
 .direct {
+  position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.direct > div {
-  margin: 2vh 0;
+.direct .list {
+  /* padding: 2vh 0; */
   /* cursor: pointer; */
-  /* background: red; */
-  width: 100%;
-  height: auto;
+  background: transparent;
+  /* width: 100%; */
+  height: 60px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 999;
 }
 
 .direct > div a {
   height: 100%;
+  /* pointer-events: none; */
   width: 100%;
-  display: inline-block;
+}
+
+.direct > div svg {
+  pointer-events: none;
 }
 
 .logo {
@@ -58,11 +69,11 @@ nav {
 }
 
 .direct > div {
-  position: relative;
+  /* position: relative; */
   /* border: 1px solid red; */
 }
 
-.direct > div:hover:after,
+a:hover:after,
 .mob-ver > div:hover:after {
   content: attr(data-content);
   pointer-events: none;
@@ -73,17 +84,27 @@ nav {
   right: 0;
   display: grid;
   place-content: center;
-  /* transform: translate(-50%, -50%); */
-  background-color: var(--second-color);
-  color: var(--main-color);
+  background-color: inherit;
+  color: inherit;
   font-size: 2vh;
   animation: fade 150ms ease-in-out alternate;
   z-index: 999;
 }
 
+.list:hover svg {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.active {
+  color: var(--second-color);
 }
 
 .menu-toogle input {
@@ -141,6 +162,102 @@ a {
   color: white;
   z-index: 100;
   font-family: "Montserrat", sans-serif;
+}
+
+/* .home {
+  background-color: var(--main-color);
+}
+
+.home svg {
+  color: var(--second-color);
+}
+
+.home .top-white {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 20px;
+  z-index: 90;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+}
+
+.home .top-black {
+  background-color: var(--second-color);
+  width: 100%;
+  height: 20px;
+  z-index: 91;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  border-bottom-right-radius: 20px;
+}
+
+.home .bot-white {
+  background-color: var(--main-color);
+  width: 100%;
+  height: 20px;
+  z-index: 90;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.home .bot-black {
+  background-color: var(--second-color);
+  width: 100%;
+  height: 20px;
+  z-index: 91;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border-top-right-radius: 20px;
+} */
+
+.active-back {
+  position: absolute;
+  width: 100%;
+  background-color: var(--main-color);
+  top: 0;
+  height: 60px;
+  z-index: 90;
+  transform: translateY(0px);
+  /* display: none; */
+  transition: transform 250ms ease;
+}
+
+.active-back .top-white {
+  position: absolute;
+  bottom: 100%;
+  background-color: var(--main-color);
+  height: 30px;
+  width: 100%;
+}
+
+.active-back .top-black {
+  position: absolute;
+  bottom: 100%;
+  background-color: var(--second-color);
+  width: 100%;
+  height: 30px;
+  border-bottom-right-radius: 20px;
+}
+
+.active-back .bot-white {
+  position: absolute;
+  top: 100%;
+  background-color: var(--main-color);
+  height: 30px;
+  width: 100%;
+}
+
+.active-back .bot-black {
+  position: absolute;
+  top: 100%;
+  background-color: var(--second-color);
+  width: 100%;
+  height: 30px;
+  border-top-right-radius: 20px;
 }
 
 @keyframes fade {

@@ -5,6 +5,10 @@
   overflow-y: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .fa-slash {
   transform: rotateZ(70deg);
   margin-right: -10px;
@@ -100,7 +104,7 @@ h1 div {
   outline: none;
   border: 3px solid var(--second-color);
   background: none;
-  width: 9em;
+  width: 100%;
   font-size: 1.5vw;
   margin-top: 15px;
   /* cursor: pointer; */
@@ -122,9 +126,6 @@ h1 div {
   margin: auto;
   position: relative;
 }
-
-
-
 
 .btn-arrow {
   display: none;
@@ -159,6 +160,10 @@ span.hov {
 
 span.hov:hover {
   transform: rotateZ(-10deg) scale(1.2);
+}
+
+.btn {
+  max-width: 7em;
 }
 
 @keyframes slide {
@@ -306,6 +311,6 @@ span.hov:hover {
 
 @media only screen and (max-width: 400px) {
   .text {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 }

@@ -126,21 +126,22 @@ nav .direct:hover .cursor {
 }
 
 .fade-enter {
-  transform: translateX(100%) scale(0.5);
+  opacity: 1;
 }
 
 .fade-enter-active {
-  transition: transform 500ms;
-  animation: slide-in 500ms linear;
-  animation-delay: 500ms;
+  /* transition: transform 500ms; */
+  /* animation: slide-in 500ms linear;
+  animation-delay: 500ms; */
+  opacity: 0.3;
 }
 
 .fade-leave-active {
-  opacity: 0.3;
-  transition: all 500ms;
-  transform: scale(0.7);
-  animation: slide 500ms linear;
-  animation-delay: 200ms;
+  opacity: 0;
+  transition: all 600ms;
+  /* transform: scale(1); */
+  /* animation: slide 500ms linear; */
+  /* animation-delay: 200ms; */
 }
 
 .trans-back {
@@ -150,15 +151,15 @@ nav .direct:hover .cursor {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--second-color);
+  background-color: var(--main-color);
   z-index: 99;
-  color: var(--main-color);
+  color: var(--second-color);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: transform 800ms ease;
 }
 .trans-back.show {
@@ -168,6 +169,10 @@ nav .direct:hover .cursor {
 .trans-back img {
   height: 40px;
   text-align: center;
+}
+
+.trans-back svg {
+  fill: red;
 }
 
 .trans-back p {
@@ -180,7 +185,7 @@ nav .direct:hover .cursor {
 .trans-back .loadbar .progress {
   width: 0;
   height: 4px;
-  background-color: var(--main-color);
+  background-color: var(--second-color);
   border-radius: 10px;
 }
 .trans-back.show .loadbar .progress {
