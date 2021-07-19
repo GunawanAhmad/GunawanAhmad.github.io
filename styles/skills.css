@@ -138,19 +138,23 @@ span.hov:hover {
 }
 
 .illus .front__end div:nth-child(1) {
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 .illus .front__end div:nth-child(2) {
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
 
 .illus .front__end div:nth-child(3) {
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 .illus .front__end div:nth-child(4) {
-  animation-delay: 0.5s;
+  animation-delay: 1s;
 }
 .illus .front__end div:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.illus .front__end div:nth-child(6) {
   animation-delay: 0ms;
   border-radius: 0 0 5px 5px;
 }
@@ -220,15 +224,15 @@ span.hov:hover {
   height: 100%;
   width: 100%;
   /* padding: 0; */
-  background: var(--second-color);
-  color: var(--main-color);
+  background: var(--main-color);
+  color: var(--second-color);
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateX(100%);
   transition: transform 1s ease;
   z-index: 10;
-  
+
   /* border: 1px solid red; */
 }
 
@@ -239,7 +243,7 @@ span.hov:hover {
 .skills-info .logo {
   height: 40px;
   width: auto;
-  margin-bottom : 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .skills-info .logo img {
@@ -257,8 +261,8 @@ span.hov:hover {
   width: 40%;
   /* border: 1px solid red; */
   text-align: center;
-  background: var(--second-color);
-  color: var(--main-color);
+  background: inherit;
+  color: inherit;
 }
 
 .skills-info .card .close {
@@ -393,7 +397,7 @@ span.hov:hover {
   .skills-info {
     margin-top: 50px;
     /* margin-top: 40px; */
-    bottom : 0;
+    bottom: 0;
   }
   .skills-info .card {
     width: 70%;
