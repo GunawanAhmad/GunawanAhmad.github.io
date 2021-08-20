@@ -17,6 +17,7 @@
 body {
   overflow: hidden;
 }
+
 .cursor {
   height: 25px;
   width: 25px;
@@ -113,8 +114,11 @@ nav .direct:hover .cursor {
   background-color: var(--main);
   /* margin: 0 0 0 0; */
   padding-left: 50px;
+  /* height: calc(100vh - 80px); */
   height: 100vh;
   position: relative;
+  /* overflow: hidden; */
+  overflow: auto;
 }
 
 #app {
@@ -295,15 +299,16 @@ nav .direct:hover .cursor {
     margin: 0px 0 0 0px;
     /* padding: 60px 0; */
     padding-left: 0;
+    height: calc(100vh - 80px);
   }
-  .top {
-    top: 60px;
-    left: 20px;
+  .symbols {
+    display: none;
+  }
+
+  #app {
+    display: block;
   }
   .cursor {
     display: none;
   }
-}
-
-@media only screen and (max-width: 700px) {
 }

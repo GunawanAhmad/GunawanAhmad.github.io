@@ -2,6 +2,11 @@
   background-color: var(--main-color);
   /* margin: 0 20px 0px 0px; */
   padding-left: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .symbols {
@@ -39,7 +44,6 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 40px;
-  height: 100vh;
   font-size: 2.2vw;
   color: var(--second-color);
   font-family: "Montserrat", sans-serif;

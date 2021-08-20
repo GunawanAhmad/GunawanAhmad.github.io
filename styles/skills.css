@@ -6,19 +6,16 @@
 }
 .skills {
   background-color: var(--main-color);
-  /* position: relative; */
-  /* padding-left: 12px; */
-  overflow-y: hidden;
   display: flex;
   justify-content: space-between;
+  min-height: 100%;
+  padding: 0 3rem;
 }
 
 .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 50px;
-  height: 100vh;
   font-size: 2vw;
   color: var(--second-color);
   font-family: "Montserrat", sans-serif;
@@ -33,7 +30,7 @@
 .text p a {
   display: inline-flex;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* border: 1px solid red; */
 }
 
@@ -98,7 +95,7 @@ span.hov:hover {
 
 .illus .front__end,
 .illus .back__end {
-  height: 35%;
+  /* height: 35%; */
   min-width: 30%;
   border: 4px solid var(--second-color);
   border-top: none;
@@ -119,7 +116,7 @@ span.hov:hover {
   justify-content: space-between;
   padding: 0 5px;
   flex-wrap: wrap;
-  height: 15%;
+  height: 40px;
   width: 100%;
   cursor: pointer;
   background: var(--second-color);
@@ -174,7 +171,7 @@ span.hov:hover {
 .illus .front__end::after,
 .illus .back__end::after {
   position: absolute;
-  bottom: -15%;
+  bottom: -2rem;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -189,30 +186,6 @@ span.hov:hover {
 
 .illus .back__end::after {
   content: "Back End";
-}
-
-.warn {
-  background: var(--second-color);
-  padding: 10px;
-  color: var(--main-color);
-  position: absolute;
-  right: 0;
-  /* height: 2.5rem; */
-  display: flex;
-  /* align-items: center; */
-  bottom: 20%;
-
-  /* transform: translateX(100%); */
-
-  border-radius: 7px 0 0 7px;
-  transition: transform 500ms ease;
-}
-.warn span {
-  margin-right: 0.5rem;
-}
-.warn.hide {
-  transform: translateX(100%);
-  z-index: 999999;
 }
 
 .skills-info {
@@ -320,7 +293,7 @@ span.hov:hover {
 
 @media only screen and (max-width: 1200px) {
   .text {
-    width: 70%;
+    width: 100%;
     font-size: 1.2rem;
   }
   .text p {
@@ -335,25 +308,22 @@ span.hov:hover {
 
 @media only screen and (max-width: 1024px) {
   .text {
-    width: 80%;
-    height: auto;
-    margin-top: 150px;
-    margin-left: 40px;
+    width: 100%;
+    /* height: auto; */
   }
   .skills {
     flex-direction: column;
-    padding: 0;
+    padding: 2rem;
+    justify-content: center;
   }
   .illus {
     flex-direction: column;
     width: 90%;
     overflow: hidden;
-    margin-left: 40px;
     /* display: none; */
   }
   .illus .front__end,
   .illus .back__end {
-    height: 20%;
     width: 100%;
     flex-direction: row-reverse;
     margin: 2rem 0 0.2rem 0;
@@ -370,7 +340,7 @@ span.hov:hover {
   .illus .back__end > div {
     transform: translateY(0) translateX(1000%);
     animation-name: stackX;
-    margin: 0 3px 0 0;
+    margin: 0 5px 5px 0;
     width: 3rem;
     height: 2rem;
     display: flex;
@@ -395,7 +365,6 @@ span.hov:hover {
   }
 
   .skills-info {
-    margin-top: 50px;
     /* margin-top: 40px; */
     bottom: 0;
   }
@@ -406,16 +375,14 @@ span.hov:hover {
 
 @media only screen and (max-width: 700px) {
   .skills {
-    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   .text {
-    margin-left: 0px;
+    /* margin-left: 0px; */
     font-size: 1rem;
   }
   .skills-info .card {
-    width: 80%;
+    /* width: 80%; */
   }
 }
