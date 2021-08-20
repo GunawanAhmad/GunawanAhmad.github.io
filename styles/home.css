@@ -3,6 +3,7 @@
   position: relative;
   padding-left: 20px;
   overflow-y: hidden;
+  height: 100%;
 }
 
 a {
@@ -13,10 +14,6 @@ a {
   transform: rotateZ(70deg);
   margin-right: -10px;
 }
-.symbol {
-  font-size: 24px;
-  color: var(--second-color);
-}
 
 .space {
   padding: 5px;
@@ -26,6 +23,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
   /* max-height: 100vh; */
 }
 
@@ -84,7 +82,6 @@ h1 div {
   flex-direction: column;
   justify-content: center;
   margin-left: 40px;
-  height: 100vh;
   font-size: 2vw;
   color: var(--second-color);
   font-family: "Montserrat", sans-serif;
@@ -100,7 +97,12 @@ h1 div {
   margin: 0.5rem 0;
 }
 
+.btn {
+  width: 7em;
+}
+
 .contact-btn {
+  display: inline;
   outline: none;
   border: 3px solid var(--second-color);
   background: none;
@@ -160,10 +162,6 @@ span.hov {
 
 span.hov:hover {
   transform: rotateZ(-10deg) scale(1.2);
-}
-
-.btn {
-  max-width: 7em;
 }
 
 @keyframes slide {
@@ -246,6 +244,10 @@ span.hov:hover {
   .top {
     top: 60px;
   }
+
+  .btn {
+    width: 10rem;
+  }
 }
 
 @media only screen and (max-width: 780px) {
@@ -290,13 +292,14 @@ span.hov:hover {
   }
   .text {
     margin: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: normal;
   }
 }
 
 @media only screen and (max-width: 550px) {
   .text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .logo-con {
     display: none;
@@ -311,6 +314,6 @@ span.hov:hover {
 
 @media only screen and (max-width: 400px) {
   .text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
