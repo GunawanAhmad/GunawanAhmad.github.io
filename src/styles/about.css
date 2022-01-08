@@ -1,0 +1,146 @@
+.about {
+  background-color: var(--main-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.symbols {
+  font-size: 24px;
+  color: var(--second-color);
+}
+
+.top {
+  /* margin-left: 80px; */
+  position: absolute;
+  top: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-slash {
+  transform: rotateZ(70deg);
+  margin-right: -10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--font-title-section);
+  color: var(--second-color);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  width: 50%;
+}
+
+.text h1 {
+  font-size: var(--font-title-section);
+}
+
+.text p {
+  font-size: 1.2vw;
+}
+
+.img {
+  /* border: 1px solid red;
+  width: 50%; */
+  margin-right: 5rem;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+span.hov {
+  width: auto;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+span.hov:hover {
+  transform: scaleY(0.8) scaleX(1.2) rotate(5deg);
+  /* color: #6c63ff; */
+}
+
+#head {
+  animation: head 1.5s linear infinite alternate;
+  transform-origin: bottom center;
+  transform-box: fill;
+}
+#tick {
+  animation: tick 10s linear infinite;
+  transform-box: fill-box;
+  transform-origin: bottom center;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes head {
+  from {
+    transform: rotate(2deg);
+  }
+  to {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes tick {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .text {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    font-size: 1rem;
+  }
+}
