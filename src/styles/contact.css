@@ -1,0 +1,278 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact {
+  background-color: var(--main-color);
+  height: 100%;
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main.hide {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  color: var(--second-color);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  width: 50%;
+  /* align-items: center; */
+  /* border: 1px solid red; */
+}
+
+.text h1 {
+  font-size: var(--font-title-section);
+}
+
+span.hov {
+  width: auto;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+span.hov:hover {
+  transform: scaleY(0.8) scaleX(1.2) rotate(5deg);
+  /* color: #6c63ff; */
+}
+
+.space {
+  padding: 7px;
+}
+
+form {
+  width: 70%;
+  /* border: 1px solid red; */
+}
+
+form div input,
+form div textarea {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background: var(--second-color);
+  color: var(--main-color);
+}
+
+::placeholder {
+  color: var(--main-color);
+  opacity: 0.6;
+}
+
+form button {
+  display: block;
+  font-weight: 600;
+  background: var(--second-color);
+  color: var(--main-color);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.send {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.send input {
+  max-width: 50px;
+  width: auto;
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+.validate {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.validate p {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.social {
+  font-weight: 600;
+  width: 50%;
+  border-left: 1px solid black;
+  padding-left: 2rem;
+}
+
+.social a {
+  color: var(--second-color);
+  text-decoration: none;
+  position: relative;
+}
+
+.media {
+  display: flex;
+  margin: 1rem 0;
+  cursor: pointer;
+  align-items: center;
+}
+
+.media .icon {
+  font-size: 2rem;
+}
+
+.media p {
+  margin-left: 1rem;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.message-status {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-status b {
+  font-size: 22px;
+  margin-bottom: 0.2rem;
+}
+
+.message-status p {
+  font-size: 18px;
+  text-align: center;
+  /* font-weight: 600; */
+}
+
+.message-status button {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--second-color);
+  outline: none;
+  color: var(--main-color);
+  border: none;
+}
+
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader.hide {
+  display: none;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring {
+  box-sizing: border-box;
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid var(--second-color);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: var(--second-color) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .text {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+    padding: 0;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .text {
+    align-items: center;
+    margin: 100px 0 0 0;
+    height: auto;
+  }
+  .social {
+    display: flex;
+    width: 80%;
+    padding: 0;
+    border: none;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .media p {
+    display: none;
+  }
+  .social a {
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about {
+    padding: 0;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  form {
+    width: 80%;
+  }
+}
