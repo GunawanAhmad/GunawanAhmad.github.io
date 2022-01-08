@@ -1,0 +1,253 @@
+nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 3vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 2.5vw;
+  min-width: 60px;
+  max-width: 150px;
+  z-index: 100;
+  background-color: var(--second-color);
+  padding: 40px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.direct {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.direct .list {
+  /* padding: 2vh 0; */
+  /* cursor: pointer; */
+  background: transparent;
+  /* width: 100%; */
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+
+.direct > div a {
+  height: 100%;
+  width: 100%;
+}
+
+.direct > div svg {
+  pointer-events: none;
+}
+
+.logo {
+  z-index: 99;
+  color: white;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 3vw;
+  min-height: 35px;
+  max-height: 150px;
+  /* width: 30px; */
+}
+
+a:hover:after,
+.mob-ver > div:hover:after {
+  content: attr(data-content);
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-content: center;
+  background-color: inherit;
+  color: inherit;
+  font-size: 2vh;
+  animation: fade 150ms ease-in-out alternate;
+  z-index: 999;
+}
+
+.list:hover svg {
+  opacity: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.active {
+  color: var(--second-color);
+}
+
+.menu-toogle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5.5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-toogle {
+  display: none;
+  flex-direction: column;
+  height: 15px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-toogle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: var(--main-color);
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+
+.menu-toogle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toogle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+
+.menu-toogle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toogle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toogle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+.mob-ver {
+  display: none;
+  position: fixed;
+  height: 40px;
+  top: 50px;
+  width: 100vw;
+  background-color: var(--second-color);
+  color: white;
+  z-index: 100;
+  font-family: "Montserrat", sans-serif;
+}
+
+.active-back {
+  position: absolute;
+  width: 100%;
+  background-color: var(--main-color);
+  top: 0;
+  height: 60px;
+  z-index: 90;
+  transform: translateY(0px);
+  /* display: none; */
+  transition: transform 250ms ease;
+}
+
+.active-back .top-white {
+  position: absolute;
+  bottom: 100%;
+  background-color: var(--main-color);
+  height: 30px;
+  width: 100%;
+}
+
+.active-back .top-black {
+  position: absolute;
+  bottom: 100%;
+  background-color: var(--second-color);
+  width: 100%;
+  height: 30px;
+  border-bottom-right-radius: 20px;
+}
+
+.active-back .bot-white {
+  position: absolute;
+  top: 100%;
+  background-color: var(--main-color);
+  height: 30px;
+  width: 100%;
+}
+
+.active-back .bot-black {
+  position: absolute;
+  top: 100%;
+  background-color: var(--second-color);
+  width: 100%;
+  height: 30px;
+  border-top-right-radius: 20px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    width: 100%;
+    max-width: 100vw;
+    height: 80px;
+    flex-direction: row;
+    padding: 0 2rem;
+    justify-content: center;
+    position: relative;
+  }
+  .direct {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .direct > div {
+    margin: 0 2rem;
+  }
+
+  .active-back {
+    display: none;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  a.active {
+    color: var(--main-color);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  .direct {
+    justify-content: space-between;
+  }
+
+  .direct > div {
+    margin: 0;
+  }
+}

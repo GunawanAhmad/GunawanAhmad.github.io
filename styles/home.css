@@ -1,0 +1,319 @@
+.home {
+  background-color: var(--main-color);
+  position: relative;
+  padding-left: 20px;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-slash {
+  transform: rotateZ(70deg);
+  margin-right: -10px;
+}
+
+.space {
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  /* max-height: 100vh; */
+}
+
+h1 div {
+  display: inline-block;
+}
+.right {
+  height: 5vw;
+  width: 5vw;
+  border: 4px solid var(--second-color);
+  border-radius: 50%;
+  position: relative;
+  animation: eye 2s infinite;
+  overflow: hidden;
+  margin: 0 0.5rem;
+  z-index: 99;
+}
+.pupil {
+  height: 2.5vw;
+  width: 2.5vw;
+  background-color: var(--second-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.light {
+  background-color: var(--main-color);
+  height: 0.5vw;
+  width: 0.5vw;
+  border-radius: 50%;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  transform: translate(-10%, -10%);
+}
+
+.top {
+  position: absolute;
+  top: 20px;
+}
+
+.bottom {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  font-size: 2vw;
+  color: var(--second-color);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+
+.bottom-text {
+  margin-top: -0.8rem;
+}
+
+.deks {
+  font-size: 1.5vw;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  width: 7em;
+}
+
+.contact-btn {
+  display: inline;
+  outline: none;
+  border: 3px solid var(--second-color);
+  background: none;
+  width: 100%;
+  font-size: 1.5vw;
+  margin-top: 15px;
+  /* cursor: pointer; */
+  color: var(--second-color);
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.2s ease;
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+}
+
+.logo-con {
+  width: 25%;
+  transform: rotate(5deg);
+  margin: auto;
+  position: relative;
+}
+
+.btn-arrow {
+  display: none;
+}
+
+.contact-btn:hover {
+  color: var(--main-color);
+  background-color: var(--second-color);
+  width: 12em;
+}
+
+.contact-btn:hover ~ .cursor {
+  height: 50px;
+}
+
+.contact-btn:hover .btn-arrow {
+  display: block;
+}
+
+.typing::after {
+  content: "";
+  border-right: 2px solid black;
+  margin-left: 3px;
+  animation: blink 0.4s infinite ease;
+}
+
+span.hov {
+  width: auto;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+span.hov:hover {
+  transform: rotateZ(-10deg) scale(1.2);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100px);
+  }
+  33.33% {
+    transform: translateX(-600px);
+  }
+  66.66% {
+    transform: translateX(-1200px);
+  }
+  100% {
+    transform: translateX(-1950px);
+  }
+}
+@keyframes trans {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(200px);
+  }
+}
+
+@keyframes flower {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes box {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes eye {
+  0% {
+    transform: translateY(30%) scaleY(1);
+  }
+  35% {
+    transform: translateY(30%) scaleY(1);
+  }
+  45% {
+    transform: translateY(30%) scaleY(0);
+  }
+  55% {
+    transform: translateY(30%) scaleY(1);
+  }
+  100% {
+    transform: translateY(30%) scaleY(1);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .top {
+    top: 60px;
+  }
+
+  .btn {
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  /* .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  } */
+
+  .text {
+    font-size: 1.2rem;
+    margin-left: 30px;
+  }
+  .img-con {
+    display: none;
+  }
+  .deks {
+    font-size: 1rem;
+  }
+  .contact-btn {
+    font-size: 1rem;
+  }
+  .right {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .pupil {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  .light {
+    height: 0.4rem;
+    width: 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .home {
+    /* padding: 0; */
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .text {
+    margin: 20px;
+    font-size: 1.2rem;
+    letter-spacing: normal;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .text {
+    font-size: 1.2rem;
+  }
+  .logo-con {
+    display: none;
+  }
+  .home {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .text {
+    font-size: 0.8rem;
+  }
+}
