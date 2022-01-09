@@ -1,0 +1,17 @@
+.about.section .outline-text {
+    top: 8rem;
+    left: 270px;
+}
+
+.about.section {
+    margin-top: 5rem;
+}
+
+.tagcloud {
+    font-family: "Montserrat", sans-serif;
+    color: var(--second-color);
+}
+
+.container .text {
+    width: 50%;
+}

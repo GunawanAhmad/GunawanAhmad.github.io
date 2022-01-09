@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
+    "TagCloud": "^2.2.0",
     "animejs": "^3.2.0",
     "axios": "^0.20.0",
     "core-js": "^3.6.5",

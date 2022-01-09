@@ -1,0 +1,21 @@
+.section {
+    min-height: 100vh;
+    position: relative;
+    margin-top: 5rem;
+    /* overflow-x: hidden; */
+}
+
+.text .deks {
+    margin: 20px 0;
+    font-size: var(--font-body);
+}
+
+.outline-text {
+    width: 100%;
+    position: absolute;
+    overflow: visible;
+    opacity: 0.1;
+    right: -70%;
+    top: 250px;
+    z-index: 0;
+}

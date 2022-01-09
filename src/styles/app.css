@@ -9,7 +9,7 @@
     --second: #f0f0f0;
     --gray: #606060;
     --font-title-section: 48px;
-    --font-body: 24px;
+    --font-body: 20px;
 }
 #app {
     --main-color: var(--main);
@@ -115,22 +115,24 @@ nav .direct:hover .cursor {
     width: 100%;
     background-color: var(--main);
     /* margin: 0 0 0 0; */
-    padding-left: 80px;
+    padding-left: 120px;
+    padding-right: 100px;
     /* height: calc(100vh - 80px); */
     height: 100vh;
     position: relative;
     /* overflow: hidden; */
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .view-page {
     background-color: var(--main-color);
     position: relative;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     height: 100%;
 }
 
-.view-page .container {
+.view-page {
     margin: auto;
     max-width: 1250px;
 }
@@ -252,29 +254,6 @@ nav .direct:hover .cursor {
     stroke-dasharray: 664px;
     stroke-dashoffset: 664px;
     animation: line-dash 2s ease forwards 1.8s;
-}
-
-::-webkit-scrollbar {
-    width: 15px;
-    z-index: 9999;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    z-index: 9999;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: var(--second-color);
-    z-index: 9999;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--second-color);
-    z-index: 9999;
 }
 
 @keyframes line-dash {

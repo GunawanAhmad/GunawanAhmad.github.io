@@ -57,7 +57,7 @@
 
                 <!-- <div class="cursor"></div> -->
                 <div @click="menuBackgroundAnim(1)" ref="btn" class="btn">
-                    <router-link class="contact-btn" to="/about">
+                    <router-link class="link-btn" to="/about">
                         about me
                     </router-link>
                 </div>
@@ -95,6 +95,8 @@
                 </svg>
             </div>
         </div>
+        <Portfolio />
+        <About />
     </div>
 </template>
 
@@ -102,10 +104,16 @@
 // // @ is an alias to /src
 // import anime from "animejs";
 import TransitionMixin from "../mixins/transition";
+import Portfolio from "../components/portfolio.vue";
+import About from "../components/aboutComp.vue";
 
 export default {
     name: "Home",
     mixins: [TransitionMixin],
+    components: {
+        Portfolio,
+        About,
+    },
     data() {
         return {
             toggle: false,
@@ -137,4 +145,4 @@ export default {
 };
 </script>
 
-<style scoped src="../styles/home.css"></style>
+<style src="../styles/home/home.css"></style>
