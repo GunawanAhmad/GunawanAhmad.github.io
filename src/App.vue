@@ -136,4 +136,4 @@ export default {
     },
 };
 </script>
-<style src="../public/styles/app.css"></style>
+<style src="./styles/app.css"></style>

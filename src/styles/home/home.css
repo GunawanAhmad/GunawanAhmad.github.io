@@ -1,3 +1,9 @@
+/* .section .text {
+    letter-spacing: 2px;
+} */
+
+@import url(global.css);
+
 a {
     text-decoration: none;
 }
@@ -16,15 +22,14 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    /* overflow: hidden; */
-    /* max-height: 100vh; */
 }
 
 .logo-outline {
     position: absolute;
-    right: 5rem;
-    top: -30%;
-    height: 170%;
+    right: 0rem;
+    top: -45%;
+    height: 160%;
+    opacity: 0.5;
 }
 
 h1 div {
@@ -63,39 +68,15 @@ h1 div {
     transform: translate(-10%, -10%);
 }
 
-.top {
-    position: absolute;
-    top: 20px;
-}
-
-.bottom {
-    display: flex;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
 .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--second-color);
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-}
-/* 
-.bottom-text {
-    margin-top: -0.8rem;
-} */
-
-.deks {
-    font-size: var(--font-body);
-    margin: 0.5rem 0;
 }
 
-.contact-btn {
+.link-btn {
     padding: 10px 15px;
     border: 3px solid var(--second-color);
     position: relative;
@@ -103,7 +84,6 @@ h1 div {
     outline: none;
     background: transparent;
     font-size: 18px;
-    margin-top: 15px;
     cursor: pointer;
     color: var(--second-color);
     text-transform: uppercase;
@@ -114,7 +94,7 @@ h1 div {
     overflow: hidden;
 }
 
-.contact-btn::after {
+.link-btn::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -126,6 +106,7 @@ h1 div {
     z-index: -1;
     transition: transform 0.2s ease;
     overflow: hidden;
+    /* border: 3px solid red; */
 }
 
 .logo-con {
@@ -135,11 +116,11 @@ h1 div {
     position: relative;
 }
 
-.contact-btn:hover {
+.link-btn:hover {
     color: var(--main-color);
 }
 
-.contact-btn:hover::after {
+.link-btn:hover::after {
     transform: translate(0);
 }
 
@@ -234,82 +215,5 @@ span.hov:hover {
     }
     100% {
         transform: translateY(30%) scaleY(1);
-    }
-}
-@media only screen and (max-width: 1024px) {
-    .top {
-        top: 60px;
-    }
-
-    .btn {
-        width: 10rem;
-    }
-}
-
-@media only screen and (max-width: 780px) {
-    /* .container {
-    flex-direction: column;
-    justify-content: flex-start;
-  } */
-
-    .text {
-        font-size: 1.2rem;
-        margin-left: 30px;
-    }
-    .img-con {
-        display: none;
-    }
-    .deks {
-        font-size: 1rem;
-    }
-    .contact-btn {
-        font-size: 1rem;
-    }
-    .right {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-    .pupil {
-        height: 1.2rem;
-        width: 1.2rem;
-    }
-    .light {
-        height: 0.4rem;
-        width: 0.4rem;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .home {
-        /* padding: 0; */
-        /* display: flex; */
-        /* justify-content: center; */
-        align-items: center;
-    }
-    .text {
-        margin: 20px;
-        font-size: 1.2rem;
-        letter-spacing: normal;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    .text {
-        font-size: 1.2rem;
-    }
-    .logo-con {
-        display: none;
-    }
-    .home {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .text {
-        font-size: 0.8rem;
     }
 }
