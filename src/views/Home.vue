@@ -6,58 +6,60 @@
             alt=""
         />
         <div class="container">
-            <div class="text">
-                <div class="title">
-                    <h1>
-                        <span class="hov">H</span>
-                        <span class="hov">i</span>
-                        <span class="hov">,</span>
-                    </h1>
-                    <h1>
-                        <span class="hov">I</span>
-                        <span class="hov">'</span>
-                        <span class="hov">m</span>
-                        <span class="space"></span>
-                        <span class="hov">G</span>
-                        <span class="hov">u</span>
-                        <span class="hov">n</span>
-                        <span class="hov">a</span>
-                        <span class="hov">w</span>
-                        <span class="hov">a</span>
-                        <span class="hov">n</span>
-                        <span class="hov">,</span>
-                    </h1>
+            <div>
+                <div class="text">
+                    <div class="title">
+                        <h1>
+                            <span class="hov">H</span>
+                            <span class="hov">i</span>
+                            <span class="hov">,</span>
+                        </h1>
+                        <h1>
+                            <span class="hov">I</span>
+                            <span class="hov">'</span>
+                            <span class="hov">m</span>
+                            <span class="space"></span>
+                            <span class="hov">G</span>
+                            <span class="hov">u</span>
+                            <span class="hov">n</span>
+                            <span class="hov">a</span>
+                            <span class="hov">w</span>
+                            <span class="hov">a</span>
+                            <span class="hov">n</span>
+                            <span class="hov">,</span>
+                        </h1>
 
-                    <h1 class="bottom-text">
-                        <span class="hov">W</span>
-                        <span class="hov">e</span>
-                        <span class="hov">b</span>
-                        <span class="space"></span>
-                        <span class="hov">D</span>
-                        <span class="hov">e</span>
-                        <span class="hov">v</span>
-                        <span class="hov">e</span>
-                        <span class="hov">l</span>
-                        <!-- <span class="hov">o</span> -->
+                        <h1 class="bottom-text">
+                            <span class="hov">W</span>
+                            <span class="hov">e</span>
+                            <span class="hov">b</span>
+                            <span class="space"></span>
+                            <span class="hov">D</span>
+                            <span class="hov">e</span>
+                            <span class="hov">v</span>
+                            <span class="hov">e</span>
+                            <span class="hov">l</span>
+                            <!-- <span class="hov">o</span> -->
 
-                        <div class="eye">
-                            <div class="pupil">
-                                <div class="light"></div>
+                            <div class="eye">
+                                <div class="pupil">
+                                    <div class="light"></div>
+                                </div>
                             </div>
+                            <span class="hov">p</span>
+                            <span class="hov">e</span>
+                            <span class="hov">r</span>
+                            <span class="hov">.</span>
+                        </h1>
+                        <div class="deks">
+                            <p>Front End Developer</p>
                         </div>
-                        <span class="hov">p</span>
-                        <span class="hov">e</span>
-                        <span class="hov">r</span>
-                        <span class="hov">.</span>
-                    </h1>
-                    <div class="deks">
-                        <p>Front End Developer</p>
                     </div>
-                </div>
 
-                <!-- <div class="cursor"></div> -->
+                    <!-- <div class="cursor"></div> -->
+                </div>
                 <div @click="menuBackgroundAnim(1)" ref="btn" class="btn">
-                    <router-link class="link-btn" to="/about">
+                    <router-link to="/about">
                         about me
                     </router-link>
                 </div>
@@ -97,6 +99,7 @@
         </div>
         <Portfolio />
         <About />
+        <Contact />
     </div>
 </template>
 
@@ -106,6 +109,7 @@
 import TransitionMixin from "../mixins/transition";
 import Portfolio from "../components/portfolio.vue";
 import About from "../components/aboutComp.vue";
+import Contact from "../components/contactComp.vue";
 
 export default {
     name: "Home",
@@ -113,6 +117,7 @@ export default {
     components: {
         Portfolio,
         About,
+        Contact,
     },
     data() {
         return {
@@ -145,4 +150,4 @@ export default {
 };
 </script>
 
-<style src="../styles/home/home.css"></style>
+<style scoped src="../styles/home/home.css"></style>

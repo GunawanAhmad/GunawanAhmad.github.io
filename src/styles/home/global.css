@@ -1,5 +1,4 @@
 .section {
-    min-height: 100vh;
     position: relative;
     margin-top: 5rem;
     /* overflow-x: hidden; */
@@ -18,4 +17,97 @@
     right: -70%;
     top: 250px;
     z-index: 0;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 3px solid var(--second-color);
+    position: relative;
+    display: inline-block;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--second-color);
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn a {
+    color: var(--second-color);
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--second-color);
+    transform: translate(-100%);
+    z-index: -1;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+    /* border: 3px solid red; */
+}
+
+.btn:hover,
+.btn:hover a {
+    color: var(--main-color);
+}
+
+.btn:hover::after {
+    transform: translate(0);
+}
+
+.input {
+    position: relative;
+    background-color: var(--gray-color);
+    outline: none;
+    padding: 10px 15px;
+    font-size: var(--font-body);
+    border: none;
+    z-index: 2;
+    box-shadow: none;
+    color: var(--second-color);
+}
+
+.input:focus {
+    box-shadow: 0px 2px 0 white;
+}
+
+::placeholder {
+    color: #808080;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--second-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+    .about.section .outline-text {
+        color: transparent;
+        -webkit-text-stroke: 1px var(--second-color);
+        text-shadow: none;
+    }
 }
