@@ -18,7 +18,7 @@
             <p class="deks">A small gallery of my recent projects</p>
         </div>
         <div @click="menuBackgroundAnim(1)" ref="btn" class="btn">
-            <router-link class="link-btn" to="/work">
+            <router-link to="/work">
                 See more!
             </router-link>
         </div>

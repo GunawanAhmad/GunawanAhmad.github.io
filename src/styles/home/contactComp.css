@@ -1,5 +1,5 @@
-.about.section .outline-text {
-    top: 0rem;
+.contact.section .outline-text {
+    top: -4.9rem;
     left: 50px;
     font-size: 122px;
     opacity: 0.1;
@@ -9,23 +9,20 @@
     color: var(--second-color);
 }
 
-.about.section {
-    margin-top: 5rem;
+.form .input-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-.tagcloud {
-    font-family: "Montserrat", sans-serif;
-    color: var(--second-color);
-}
-
-.container .text {
-    width: 50%;
-    position: relative;
-    z-index: 1;
+.form .textarea {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 @supports (-webkit-text-stroke: 1px black) {
-    .about.section .outline-text {
+    .contact.section .outline-text {
         color: transparent;
         -webkit-text-stroke: 1px var(--second-color);
         text-shadow: none;

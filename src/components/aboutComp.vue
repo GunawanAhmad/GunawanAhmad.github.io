@@ -1,18 +1,6 @@
 <template>
     <div class="about section">
-        <svg class="outline-text">
-            <text
-                text-anchor="middle"
-                font-size="150"
-                fill="none"
-                stroke-width=".4"
-                font-weight="700"
-                stroke="#fff"
-                font-family="Montserrat"
-            >
-                About
-            </text>
-        </svg>
+        <div class="outline-text">About</div>
         <div class="container">
             <div class="text">
                 <h1 class="title">About Me</h1>
