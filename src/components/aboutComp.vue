@@ -1,9 +1,11 @@
 <template>
     <div class="about section">
-        <div class="outline-text">About</div>
         <div class="container">
             <div class="text">
-                <h1 class="title">About Me</h1>
+                <h1 class="title">
+                    About Me
+                    <div class="outline-text">About</div>
+                </h1>
                 <p class="deks">
                     My name is Gunawan Nur Ahmad, I'm a Front End Developer and
                     currently studying Computer Science. I'm from Lampung,

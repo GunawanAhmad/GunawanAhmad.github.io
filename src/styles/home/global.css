@@ -1,7 +1,6 @@
 .section {
     position: relative;
     margin-top: 5rem;
-    /* overflow-x: hidden; */
 }
 
 .text .deks {
@@ -9,14 +8,23 @@
     font-size: var(--font-body);
 }
 
+.text .title {
+    position: relative;
+}
+
 .outline-text {
     width: 100%;
     position: absolute;
     overflow: visible;
     opacity: 0.1;
-    right: -70%;
-    top: 250px;
+    left: 2rem;
+    top: -5rem;
     z-index: 0;
+    font-size: 122px;
+    opacity: 0.1;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: var(--main-color);
 }
 
 .btn {
@@ -30,11 +38,12 @@
     cursor: pointer;
     color: var(--second-color);
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     transition: all 0.2s ease;
     z-index: 1;
     overflow: hidden;
+    letter-spacing: 2px;
 }
 
 .btn a {
@@ -97,7 +106,8 @@
     flex-direction: column;
     justify-content: center;
     color: var(--second-color);
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
 }
 
 a {
@@ -105,9 +115,9 @@ a {
 }
 
 @supports (-webkit-text-stroke: 1px black) {
-    .about.section .outline-text {
+    .outline-text {
         color: transparent;
-        -webkit-text-stroke: 1px var(--second-color);
+        -webkit-text-stroke: 2px var(--second-color);
         text-shadow: none;
     }
 }
