@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main: #353535;
+    --second: #f0f0f0;
+    --gray: #606060;
+    --font-title-section: 48px;
+    --font-body: 16px;
+}
+#app {
+    --main-color: var(--main);
+    --second-color: var(--second);
+    --gray-color: var(--gray);
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+}

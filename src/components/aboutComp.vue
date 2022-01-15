@@ -6,7 +6,7 @@
                     About Me
                     <div class="outline-text">About</div>
                 </h1>
-                <p class="deks">
+                <p class="desc">
                     My name is Gunawan Nur Ahmad, I'm a Front End Developer and
                     currently studying Computer Science. I'm from Lampung,
                     Indonesia.
@@ -56,4 +56,4 @@ export default {
 };
 </script>
 
-<style scoped src="../styles/home/aboutComp.css"></style>
+<style scoped src="../styles/about.css"></style>

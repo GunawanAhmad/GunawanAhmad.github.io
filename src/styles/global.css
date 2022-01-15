@@ -3,13 +3,14 @@
     margin-top: 5rem;
 }
 
-.text .deks {
+.text .desc {
     margin: 20px 0;
     font-size: var(--font-body);
 }
 
 .text .title {
     position: relative;
+    font-size: var(--font-title-section);
 }
 
 .outline-text {
@@ -20,7 +21,7 @@
     left: 2rem;
     top: -5rem;
     z-index: 0;
-    font-size: 122px;
+    font-size: 2.5em;
     opacity: 0.1;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
@@ -44,6 +45,7 @@
     z-index: 1;
     overflow: hidden;
     letter-spacing: 2px;
+    border-radius: 0px;
 }
 
 .btn a {
@@ -74,7 +76,15 @@
     transform: translate(0);
 }
 
-.input {
+.btn.disabled {
+    /* display: none; */
+    pointer-events: none;
+    color: #808080;
+    border: 3px solid #808080;
+}
+
+.input,
+.textarea {
     position: relative;
     background-color: var(--gray-color);
     outline: none;
@@ -84,9 +94,11 @@
     z-index: 2;
     box-shadow: none;
     color: var(--second-color);
+    font-family: "Poppins", sans-serif;
 }
 
-.input:focus {
+.input:focus,
+.textarea:focus {
     box-shadow: 0px 2px 0 white;
 }
 
