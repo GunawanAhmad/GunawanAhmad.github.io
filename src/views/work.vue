@@ -1,18 +1,20 @@
 <template>
-    <div class="work-page">
-        <h1 class="title-page">
-            <span class="hov">M</span>
-            <span class="hov">y</span>
-            <span class="space"></span>
-            <span class="hov">p</span>
-            <span class="hov">r</span>
-            <span class="hov">o</span>
-            <span class="hov">j</span>
-            <span class="hov">e</span>
-            <span class="hov">c</span>
-            <span class="hov">t</span>
-            <span class="hov">s</span>
-        </h1>
+    <div class="work page">
+        <div class="text">
+            <h1 class="title">
+                <span class="hov">M</span>
+                <span class="hov">y</span>
+                <span class="space"></span>
+                <span class="hov">p</span>
+                <span class="hov">r</span>
+                <span class="hov">o</span>
+                <span class="hov">j</span>
+                <span class="hov">e</span>
+                <span class="hov">c</span>
+                <span class="hov">t</span>
+                <span class="hov">s</span>
+            </h1>
+        </div>
 
         <div class="work-list">
             <div class="work" v-for="work in myProjects" :key="work.key">
@@ -41,12 +43,14 @@
                     <div class="links">
                         <a
                             target="_blank"
+                            class="btn"
                             :href="work.link"
                             :class="work.link === '' ? 'disabled' : ''"
                             >Visit</a
                         >
                         <a
                             target="_blank"
+                            class="btn"
                             :href="work.source"
                             :class="work.source === '' ? 'disabled' : ''"
                             >Source Code</a

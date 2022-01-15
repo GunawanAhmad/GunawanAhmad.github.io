@@ -1,28 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --main: #353535;
-    --second: #f0f0f0;
-    --gray: #606060;
-    --font-title-section: 48px;
-    --font-body: 20px;
-}
-#app {
-    --main-color: var(--main);
-    --second-color: var(--second);
-    --gray-color: var(--gray);
-    overflow: hidden;
-}
-
-body {
-    overflow: hidden;
-}
+@import url(reset.css);
 
 .cursor {
     height: 25px;
@@ -118,7 +94,7 @@ nav .direct:hover .cursor {
     background-color: var(--main);
     /* margin: 0 0 0 0; */
     padding-left: 120px;
-    padding-right: 100px;
+    padding-right: 60px;
     /* height: calc(100vh - 80px); */
     height: 100vh;
     position: relative;
@@ -315,6 +291,27 @@ nav .direct:hover .cursor {
     .cursor {
         display: none;
     }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--gray-color);
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 @media only screen and (max-width: 704px) {

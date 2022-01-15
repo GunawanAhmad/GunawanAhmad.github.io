@@ -51,7 +51,7 @@
                             <span class="hov">r</span>
                             <span class="hov">.</span>
                         </h1>
-                        <div class="deks">
+                        <div class="desc">
                             <p>Front End Developer</p>
                         </div>
                     </div>
@@ -97,9 +97,10 @@
                 </svg>
             </div>
         </div>
-        <Portfolio />
         <About />
+        <Portfolio />
         <Contact />
+        <div style="height : 3rem"></div>
     </div>
 </template>
 
@@ -150,4 +151,4 @@ export default {
 };
 </script>
 
-<style scoped src="../styles/home/home.css"></style>
+<style scoped src="../styles/home.css"></style>

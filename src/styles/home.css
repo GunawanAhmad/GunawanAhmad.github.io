@@ -1,11 +1,11 @@
-/* .section .text {
-    letter-spacing: 2px;
-} */
-
-@import url(global.css);
+@import url(./global.css);
 
 .home {
     min-height: 100vh;
+}
+
+.home .desc {
+    font-size: 24px !important;
 }
 
 .fa-slash {

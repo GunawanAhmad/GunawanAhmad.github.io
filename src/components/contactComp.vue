@@ -1,10 +1,12 @@
 <template>
     <div class="contact section">
-        <div class="outline-text">Contact</div>
         <div class="container">
             <div>
                 <div class="text">
-                    <h1 class="title">Contact</h1>
+                    <h1 class="title">
+                        <div class="outline-text">Contact</div>
+                        Contact
+                    </h1>
                 </div>
                 <div class="form">
                     <div class="input-wrapper">
@@ -12,7 +14,7 @@
                         <input class="input" type="text" placeholder="Email" />
                     </div>
                     <textarea
-                        class="input textarea"
+                        class="textarea"
                         name=""
                         id=""
                         cols="30"
@@ -29,4 +31,4 @@
 export default {};
 </script>
 
-<style scoped src="../styles/home/contactComp.css"></style>
+<style scoped src="../styles/contact.css"></style>

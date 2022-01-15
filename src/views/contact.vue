@@ -2,8 +2,9 @@
     <div class="contact">
         <div class="main" ref="main">
             <div class="text">
-                <div class="header">
+                <div class="title">
                     <h1>
+                        <div class="outline-text">Contact</div>
                         <span class="hov">C</span>
                         <span class="hov">o</span>
                         <span class="hov">n</span>
@@ -16,53 +17,42 @@
                         <span class="hov">e</span>
                     </h1>
                 </div>
-                <form @submit="send">
+                <form @submit="send" class="form">
                     <input type="hidden" name="_captcha" value="false" />
-                    <div class="name">
+                    <div class="input-wrapper">
                         <input
                             type="text"
                             placeholder="Name"
                             required
                             v-model="name"
                             name="name"
+                            class="input"
                         />
-                    </div>
-                    <div class="email">
+
                         <input
                             type="email"
                             placeholder="Email address"
                             name="email"
                             required
                             v-model="email"
+                            class="input"
                         />
                     </div>
-                    <div class="message">
-                        <textarea
-                            id
-                            cols="30"
-                            rows="10"
-                            placeholder="Your Message"
-                            name="message"
-                            required
-                            v-model="message"
-                        ></textarea>
-                    </div>
 
-                    <div class="send">
-                        <button type="submit">
-                            Send
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                        <div class="validate">
-                            <p>{{ num1 }} + {{ num2 }} =</p>
-                            <input
-                                type="text"
-                                class="check_input"
-                                v-model="checkAnswer"
-                                required
-                            />
-                        </div>
-                    </div>
+                    <textarea
+                        id
+                        cols="30"
+                        rows="10"
+                        placeholder="Your Message"
+                        name="message"
+                        required
+                        v-model="message"
+                        class="textarea"
+                    ></textarea>
+
+                    <button type="submit" class="btn">
+                        Send Message !
+                    </button>
                 </form>
             </div>
             <div class="social">

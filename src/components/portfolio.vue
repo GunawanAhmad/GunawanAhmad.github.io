@@ -5,7 +5,7 @@
                 My Portfolio
                 <div class="outline-text">Portfolio</div>
             </h1>
-            <p class="deks">A small gallery of my recent projects</p>
+            <p class="desc">A small gallery of my recent projects</p>
         </div>
         <div @click="menuBackgroundAnim(1)" ref="btn" class="btn">
             <router-link to="/work">
@@ -19,6 +19,10 @@
             <div></div>
             <div></div>
             <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
 </template>
@@ -26,4 +30,4 @@
 export default {};
 </script>
 
-<style scoped src="../styles/home/portfolioComp.css"></style>
+<style scoped src="../styles/work.css"></style>
