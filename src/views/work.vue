@@ -2,6 +2,7 @@
     <div class="work page">
         <div class="text">
             <h1 class="title">
+                <div class="outline-text">Projects</div>
                 <span class="hov">M</span>
                 <span class="hov">y</span>
                 <span class="space"></span>
