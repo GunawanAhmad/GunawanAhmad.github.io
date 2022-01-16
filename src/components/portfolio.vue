@@ -2,8 +2,19 @@
     <div class="portfolio section">
         <div class="text">
             <h1 class="title">
-                My Portfolio
                 <div class="outline-text">Portfolio</div>
+                <span class="hov">M</span>
+                <span class="hov">y</span>
+                <span class="space"></span>
+                <span class="hov">p</span>
+                <span class="hov">o</span>
+                <span class="hov">r</span>
+                <span class="hov">t</span>
+                <span class="hov">f</span>
+                <span class="hov">o</span>
+                <span class="hov">l</span>
+                <span class="hov">i</span>
+                <span class="hov">o</span>
             </h1>
             <p class="desc">A small gallery of my recent projects</p>
         </div>

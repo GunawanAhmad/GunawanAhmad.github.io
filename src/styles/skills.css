@@ -1,9 +1,3 @@
-* {
-    font-family: "Montserrat", sans-serif;
-}
-.space {
-    padding: 5px;
-}
 .skills {
     background-color: var(--main-color);
     display: flex;
@@ -18,8 +12,6 @@
     flex-direction: column;
     justify-content: center;
     color: var(--second-color);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
     width: 40%;
 }
 

@@ -46,11 +46,6 @@
     justify-content: center;
     height: 100%;
     color: var(--second-color);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-    width: 50%;
-    /* align-items: center; */
-    /* border: 1px solid red; */
 }
 
 .text h1 {
@@ -65,7 +60,6 @@ span.hov {
 
 span.hov:hover {
     transform: scaleY(0.8) scaleX(1.2) rotate(5deg);
-    /* color: #6c63ff; */
 }
 
 .space {

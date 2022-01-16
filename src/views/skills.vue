@@ -1,7 +1,8 @@
 <template>
     <div class="skills">
         <div class="text">
-            <h1>
+            <h1 class="title">
+                <div class="outline-text">Skills</div>
                 <span class="hov">W</span>
                 <span class="hov">h</span>
                 <span class="hov">a</span>

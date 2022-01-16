@@ -3,8 +3,15 @@
         <div class="container">
             <div class="text">
                 <h1 class="title">
-                    About Me
                     <div class="outline-text">About</div>
+                    <span class="hov">A</span>
+                    <span class="hov">b</span>
+                    <span class="hov">o</span>
+                    <span class="hov">u</span>
+                    <span class="hov">t</span>
+                    <span class="space"></span>
+                    <span class="hov">M</span>
+                    <span class="hov">e</span>
                 </h1>
                 <p class="desc">
                     My name is Gunawan Nur Ahmad, I'm a Front End Developer and

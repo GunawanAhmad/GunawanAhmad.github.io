@@ -5,7 +5,16 @@
                 <div class="text">
                     <h1 class="title">
                         <div class="outline-text">Contact</div>
-                        Contact
+                        <span class="hov">C</span>
+                        <span class="hov">o</span>
+                        <span class="hov">n</span>
+                        <span class="hov">t</span>
+                        <span class="hov">a</span>
+                        <span class="hov">c</span>
+                        <span class="hov">t</span>
+                        <span class="space"></span>
+                        <span class="hov">M</span>
+                        <span class="hov">e</span>
                     </h1>
                 </div>
                 <div class="form">

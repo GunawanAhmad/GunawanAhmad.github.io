@@ -26,6 +26,7 @@
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     color: var(--main-color);
+    pointer-events: none;
 }
 
 .btn {
@@ -120,6 +121,10 @@
     color: var(--second-color);
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
+}
+
+span.space {
+    padding: 6px;
 }
 
 a {
