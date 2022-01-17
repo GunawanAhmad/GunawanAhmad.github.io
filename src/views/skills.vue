@@ -1,5 +1,5 @@
 <template>
-    <div class="skills">
+    <div class="skills view-page">
         <div class="text">
             <h1 class="title">
                 <div class="outline-text">Skills</div>

@@ -1,7 +1,7 @@
 @import url(./global.css);
 
-.work.page {
-    padding: 5rem 0 0 0;
+.work.view-page {
+    padding: 10rem 0;
 }
 
 .gallery {
@@ -14,6 +14,69 @@
     background-color: var(--second-color);
     border: 1px solid var(--main-color);
     padding-top: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.gallery > div > a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.gallery > div::before {
+    content: "View Project";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--font-body);
+    color: var(--second-color);
+    transition: all 200ms ease;
+    transform-origin: center center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    word-break: keep-all;
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+.gallery > div:hover:before {
+    height: 50%;
+    width: 50%;
+    z-index: 2;
+}
+
+.gallery > div:hover img {
+    transform: scale(1.2);
+    transform-origin: center center;
+}
+
+.gallery > div:hover:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.gallery > div > a img {
+    height: 100%;
+    width: 100%;
+    transition: all 200ms ease;
 }
 
 .btn {
@@ -23,10 +86,9 @@
 .work-list .work {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10rem;
     color: var(--second-color);
     font-family: "Poppins", sans-serif;
-    margin-top: 3rem;
+    padding: 5rem 0;
 }
 
 .work .information {
@@ -69,7 +131,6 @@
     height: 100%;
     width: 100%;
     transition: transform 250ms ease;
-    object-fit: contain;
 }
 
 .mobile-img {
