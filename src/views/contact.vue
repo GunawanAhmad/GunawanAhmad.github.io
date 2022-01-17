@@ -38,7 +38,14 @@
                             class="input"
                         />
                     </div>
-
+                    <input
+                        type="text"
+                        placeholder="Subject"
+                        required
+                        v-model="subject"
+                        name="name"
+                        class="input"
+                    />
                     <textarea
                         id
                         cols="30"
@@ -91,7 +98,7 @@
             <div v-else class="message-status">
                 <b>{{ sendMessageStatus }}</b>
                 <p>{{ statusMessage }}</p>
-                <button @click="toggleStatusPage">OK</button>
+                <button @click="toggleStatusPage" class="btn">OK</button>
             </div>
         </div>
     </div>
@@ -102,12 +109,9 @@ import axios from "axios";
 export default {
     data() {
         return {
-            num1: 1,
-            num2: 2,
-            checkAnswer: "",
-            answer: "",
             name: "",
             email: "",
+            subject: "",
             message: "",
             statusMessage:
                 "Your Message has been sent successfully, I will contact you very soon !",
@@ -116,53 +120,38 @@ export default {
             isShowingStatus: false,
         };
     },
-    mounted() {
-        let num1 = Math.round(Math.random() * 3);
-        let num2 = Math.round(Math.random() * 3);
-        this.num1 = num1;
-        this.num2 = num2;
-        this.answer = num1 + num2;
-    },
     methods: {
         send(e) {
-            if (this.checkAnswer.toString() != this.answer) {
-                e.preventDefault();
-            } else {
-                e.preventDefault();
-                this.isLoading = true;
-                this.toggleStatusPage();
-                axios.defaults.headers.post["Content-Type"] =
-                    "application/json";
-                axios
-                    .post(
-                        "https://formsubmit.co/ajax/gunawanahmadef@gmail.com",
-                        {
-                            name: this.name,
-                            email: this.email,
-                            message: this.message,
-                        }
-                    )
-                    .then((res) => {
-                        console.log(res);
-                        this.email = "";
-                        this.name = "";
-                        this.message = "";
-                        this.checkAnswer = "";
-                        this.isLoading = false;
-                        this.isShowingStatus = true;
-                        this.statusMessage =
-                            "Your Message has been sent successfully, I will contact you very soon !";
-                        this.sendMessageStatus = "Thank you !";
-                    })
-                    .catch((err) => {
-                        console.log(err);
-                        this.isShowingStatus = true;
-                        this.isLoading = false;
-                        this.statusMessage =
-                            "Some error has occured, Please try again next time !";
-                        this.sendMessageStatus = "Sorry !";
-                    });
-            }
+            e.preventDefault();
+            this.isLoading = true;
+            this.toggleStatusPage();
+            axios.defaults.headers.post["Content-Type"] = "application/json";
+            axios
+                .post("https://formsubmit.co/ajax/gunawanahmadef@gmail.com", {
+                    name: this.name,
+                    email: this.email,
+                    message: this.message,
+                })
+                .then((res) => {
+                    console.log(res);
+                    this.email = "";
+                    this.name = "";
+                    this.message = "";
+                    this.checkAnswer = "";
+                    this.isLoading = false;
+                    this.isShowingStatus = true;
+                    this.statusMessage =
+                        "Your Message has been sent successfully, I will contact you very soon !";
+                    this.sendMessageStatus = "Thank you !";
+                })
+                .catch((err) => {
+                    console.log(err);
+                    this.isShowingStatus = true;
+                    this.isLoading = false;
+                    this.statusMessage =
+                        "Some error has occured, Please try again next time !";
+                    this.sendMessageStatus = "Sorry !";
+                });
         },
         toggleStatusPage() {
             this.isShowingStatus = !this.isShowingStatus;
