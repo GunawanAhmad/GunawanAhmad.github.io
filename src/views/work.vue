@@ -1,5 +1,5 @@
 <template>
-    <div class="work page">
+    <div class="work view-page">
         <div class="text">
             <h1 class="title">
                 <div class="outline-text">Projects</div>
@@ -18,9 +18,9 @@
         </div>
 
         <div class="work-list">
-            <div class="work" v-for="work in myProjects" :key="work.key">
+            <div class="work" v-for="(work, index) in myProjects" :key="index">
                 <div class="information">
-                    <h2 class="work-number">0{{ work.key }}.</h2>
+                    <h2 class="work-number">0{{ index + 1 }}.</h2>
                     <h1 class="work-title">
                         {{ work.title }}
                     </h1>
@@ -75,29 +75,15 @@ export default {
             isDetail: false,
             myProjects: [
                 {
-                    title: "Web Application for Online Consultation (Kliniku)",
+                    title: "Sorting Visualizer",
                     description:
-                        "Kliniku is an online consultation platform where people can fill in an online form about their health issue to send for a doctor. The doctor can respond and give them medical advice.",
+                        "Sorting visualizer is visualization tool for famous sorting algorithm such as Insertion and Selection. The user can random the array and it's also included the pseudo code visualization and a bit of information of the algorithm.",
                     source:
-                        "https://github.com/GunawanAhmad/Sisfo-Klinik-Full-Stack",
-                    link: "",
-                    codeTools: ["VueJS", "MongoDB", "NodeJs", "ExpressJS"],
-                    design: "Design by Faris Azizy",
-                    img: "kliniku.svg",
-                    key: 1,
-                },
-                {
-                    title: "Radio and Checkbox Input Generator",
-                    description:
-                        "Radio and Checkbox Input Generator is a web where developer can make their custom radio and checkbox input for HTML and CSS code and make the development process easier and faster.",
-                    source:
-                        "https://github.com/GunawanAhmad/Radio-Checkbox-Generator",
-                    link:
-                        "https://gunawanahmad.github.io/Radio-Checkbox-Generator/",
-                    img: "generator.png",
-                    codeTools: ["HTML", "SCSS", "Javascript"],
-                    design: "Design by Me with Adobe XD",
-                    key: 2,
+                        "https://github.com/GunawanAhmad/sorting-visualizer",
+                    link: "https://gunawanahmad.github.io/sorting-visualizer/",
+                    img: "sorting.png",
+                    codeTools: ["Vue JS"],
+                    design: "Design by Me with Figma",
                 },
                 {
                     title: "Pathfinding Visualizer",
@@ -110,19 +96,18 @@ export default {
                     img: "pathfinding-visualizer.png",
                     codeTools: ["Vue JS", "SCSS"],
                     design: "Design by Me",
-                    key: 3,
                 },
                 {
-                    title: "Sorting Visualizer",
+                    title: "Radio and Checkbox Input Generator",
                     description:
-                        "Sorting visualizer is visualization tool for famous sorting algorithm such as Insertion and Selection. The user can random the array and it's also included the pseudo code visualization and a bit of information of the algorithm.",
+                        "Radio and Checkbox Input Generator is a web where developer can make their custom radio and checkbox input for HTML and CSS code and make the development process easier and faster.",
                     source:
-                        "https://github.com/GunawanAhmad/sorting-visualizer",
-                    link: "https://gunawanahmad.github.io/sorting-visualizer/",
-                    img: "sorting.png",
-                    codeTools: ["Vue JS"],
-                    design: "Design by Me with Figma",
-                    key: 4,
+                        "https://github.com/GunawanAhmad/Radio-Checkbox-Generator",
+                    link:
+                        "https://gunawanahmad.github.io/Radio-Checkbox-Generator/",
+                    img: "generator.png",
+                    codeTools: ["HTML", "SCSS", "Javascript"],
+                    design: "Design by Me with Adobe XD",
                 },
                 {
                     title: "Inventory Web App",
@@ -140,7 +125,6 @@ export default {
                         "Mongoose",
                     ],
                     design: "Design by Me with Figma",
-                    key: 5,
                 },
                 {
                     title: "Indeas.io (Landing Page)",
@@ -151,7 +135,6 @@ export default {
                     img: "ideas.png",
                     codeTools: ["HTML", "Tailwind CSS", "Javascript"],
                     design: "Design by Me with Figma",
-                    key: 6,
                 },
                 {
                     title: "Statued (Landing Page)",
@@ -167,7 +150,17 @@ export default {
                         "Three Js",
                     ],
                     design: "Design by Me with Figma",
-                    key: 7,
+                },
+                {
+                    title: "Web Application for Online Consultation (Kliniku)",
+                    description:
+                        "Kliniku is an online consultation platform where people can fill in an online form about their health issue to send for a doctor. The doctor can respond and give them medical advice.",
+                    source:
+                        "https://github.com/GunawanAhmad/Sisfo-Klinik-Full-Stack",
+                    link: "",
+                    codeTools: ["VueJS", "MongoDB", "NodeJs", "ExpressJS"],
+                    design: "Design by Faris Azizy",
+                    img: "kliniku.png",
                 },
             ],
         };
