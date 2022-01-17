@@ -2,7 +2,7 @@
     <div class="navbar">
         <nav>
             <div class="logo">
-                <img src="../assets/logoName.svg" alt="" />
+                <img src="../assets/logo.svg" alt="" />
             </div>
             <div class="direct" ref="navList">
                 <div class="active-back" ref="menuBag">
