@@ -52,10 +52,9 @@ nav {
 }
 
 .logo img {
-    height: 3vw;
-    min-height: 35px;
+    min-height: 40px;
     max-height: 150px;
-    /* width: 30px; */
+    transform: rotate(-5deg);
 }
 
 a:hover:after,
