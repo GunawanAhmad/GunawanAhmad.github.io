@@ -123,10 +123,39 @@
                 </div>
             </div>
             <div class="menu-toogle">
-                <input type="checkbox" @click="slide" />
+                <input type="checkbox" @click="slide" ref="checkbox"/>
                 <span></span>
                 <span></span>
                 <span></span>
+            </div>
+            <div class="mob-ver trans" ref="mobVer">
+                <ul>
+                    <li @click="changePage">
+                        <router-link to="/" data-content="Home">
+                        Home
+                        </router-link>
+                    </li>
+                     <li @click="changePage">
+                        <router-link to="/about" data-content="About">
+                        About
+                        </router-link>
+                    </li>
+                    <li @click="changePage">
+                        <router-link to="/Skills" data-content="Sklills">
+                        Skills
+                        </router-link>
+                    </li>
+                    <li @click="changePage">
+                        <router-link to="/work" data-content="Projects">
+                        Projects
+                        </router-link>
+                    </li>
+                    <li @click="changePage">
+                        <router-link to="/contact" data-content="Contact">
+                        Contact
+                        </router-link>
+                    </li>
+                </ul>
             </div>
         </nav>
     </div>
@@ -143,24 +172,24 @@ export default {
     },
     methods: {
         slide() {
-            this.$refs.nav.classList.toggle("slide");
+            this.$refs.mobVer.classList.toggle("show");
+            this.$refs.mobVer.classList.add("trans")
+            
         },
+        changePage() {
+            this.$refs.mobVer.classList.remove("trans")
+            this.pageTransition();
+            this.$refs.checkbox.checked = false;
+            setTimeout(()=> {
+                this.slide()
+            }, 1000)
+        }
     },
     mounted() {
         this.$store.state.navList = this.$refs.navList;
         this.$store.state.menuListHeight = this.$refs.size.clientHeight;
         this.$store.state.lastVisitedPage = this.$refs.size.children[0];
         this.$store.state.lastVisitedPage.classList.toggle("active");
-        this.$store.state.hover.push(document.querySelector(".logo"));
-        let nav1 = document.querySelectorAll(".direct a");
-        nav1.forEach((p) => {
-            this.$store.state.hover.push(p);
-        });
-
-        let nav2 = document.querySelectorAll(".mob-ver div");
-        nav2.forEach((p) => {
-            this.$store.state.hover.push(p);
-        });
     },
 };
 </script>

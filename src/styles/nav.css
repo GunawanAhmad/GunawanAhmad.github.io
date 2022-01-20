@@ -12,7 +12,8 @@ nav {
     z-index: 100;
     background-color: var(--gray-color);
     padding: 40px 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+    z-index: 101;
 }
 
 .direct {
@@ -33,7 +34,7 @@ nav {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 999;
+    z-index: 98;
 }
 
 .direct > div a {
@@ -57,26 +58,9 @@ nav {
     transform: rotate(-5deg);
 }
 
-a:hover:after,
-.mob-ver > div:hover:after {
-    content: attr(data-content);
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: grid;
-    place-content: center;
-    background-color: inherit;
-    color: inherit;
-    font-size: 2vh;
-    animation: fade 150ms ease-in-out alternate;
-    z-index: 999;
-}
 
 .list:hover svg {
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 a {
@@ -104,17 +88,23 @@ a.active {
 .menu-toogle {
     display: none;
     flex-direction: column;
-    height: 15px;
+    /* height: 15px; */
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    z-index: 100;
+    background-color: var(--main-color);
+    padding: .5rem;
 }
 .menu-toogle span {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: var(--gray-color);
+    background-color: var(--second-color);
     border-radius: 3px;
     transition: all 0.5s ease;
+    margin-bottom: 5px;
 }
 
 .menu-toogle span:nth-child(2) {
@@ -122,7 +112,7 @@ a.active {
 }
 
 .menu-toogle input:checked ~ span:nth-child(2) {
-    transform: rotate(45deg) translate(-4px, -4px);
+    transform: rotate(45deg) translate(-2px, -1.8px);
 }
 
 .menu-toogle span:nth-child(4) {
@@ -136,17 +126,47 @@ a.active {
     transform: scale(0);
 }
 
-.mob-ver {
-    display: none;
-    position: fixed;
-    height: 40px;
-    top: 50px;
-    width: 100vw;
-    background-color: var(--second-color);
-    color: white;
-    z-index: 100;
-    font-family: "Montserrat", sans-serif;
+span:nth-child(4) {
+    margin-bottom: 0;
 }
+
+.mob-ver {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    background-image: url(../assets/logo-outline-white.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mob-ver.trans {
+    transition: transform 250ms ease;
+}
+
+.mob-ver.show {
+    transform: translateX(0%);
+    
+}
+
+.mob-ver li {
+    list-style: none;
+    margin-bottom: 2rem;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
 
 .active-back {
     position: absolute;
@@ -205,34 +225,24 @@ a.active {
 }
 
 @media only screen and (max-width: 1024px) {
-    nav {
-        width: 100%;
-        max-width: 100vw;
-        height: 80px;
-        flex-direction: row;
-        padding: 0 2rem;
-        justify-content: center;
-        position: relative;
-    }
     .direct {
-        flex-direction: row;
-        justify-content: center;
-    }
-    .direct > div {
-        margin: 0 2rem;
-    }
-
-    .active-back {
         display: none;
     }
 
-    a {
-        width: 100%;
+    .logo {
+        display: none;
     }
 
-    a.active {
-        color: var(--main-color);
+    nav {
+        background-color: transparent;
+        z-index: 99;
     }
+
+    .menu-toogle {
+        display: block;
+    }
+
+    
 }
 
 @media only screen and (max-width: 600px) {
