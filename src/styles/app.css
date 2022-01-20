@@ -155,7 +155,7 @@ nav .direct:hover .cursor {
     right: 0;
     bottom: 0;
     background-color: var(--main-color);
-    z-index: 99;
+    z-index: 100;
     color: var(--second-color);
     display: flex;
     justify-content: center;
@@ -277,9 +277,8 @@ nav .direct:hover .cursor {
 @media only screen and (max-width: 1024px) {
     .view {
         margin: 0px 0 0 0px;
-        /* padding: 60px 0; */
         padding-left: 0;
-        height: calc(100vh - 80px);
+        padding: 0;
     }
     .symbols {
         display: none;
