@@ -63,19 +63,19 @@
                 </form>
             </div>
             <div class="social">
-                <a class="email media" href="https://mail.google.com/">
+                <a class="email media" href="mailto:gunawanfsdev@gmail" target="_blank">
                     <div class="icon">
                         <i class="fas fa-envelope"></i>
                     </div>
                     <p id="test">Gunawanfsdev@gmail.com</p>
                 </a>
-                <a class="twitter media" href="https://twitter.com/Gunawan10x">
+                <a class="twitter media" href="https://twitter.com/Gunawan10x" target="_blank">
                     <div class="icon">
                         <i class="fab fa-twitter"></i>
                     </div>
                     <p>Gunawan10x</p>
                 </a>
-                <a class="github media" href="https://github.com/GunawanAhmad">
+                <a class="github media" href="https://github.com/GunawanAhmad" target="_blank">
                     <div class="icon">
                         <i class="fab fa-github"></i>
                     </div>
@@ -83,7 +83,8 @@
                 </a>
                 <a
                     class="Linkedln media"
-                    href="https://linkedin.com/in/gunawan-ahmad-0148441b7"
+                    href="https://www.linkedin.com/in/gunawan-nur-ahmad-0148441b7/"
+                    target="_blank"
                 >
                     <div class="icon">
                         <i class="fab fa-linkedin"></i>

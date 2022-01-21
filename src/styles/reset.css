@@ -23,3 +23,11 @@
 body {
     overflow: hidden;
 }
+
+
+@media only screen and (max-width: 704px) {
+    :root {
+        --font-title-section: 36px;
+        --font-body: 14px;
+    }
+}

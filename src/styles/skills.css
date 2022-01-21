@@ -50,7 +50,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-decoration: underline; */
 }
 
 .text p .linkedln::before {
@@ -116,11 +115,10 @@ span.hov:hover {
     background: var(--second-color);
     color: var(--main-color);
     margin: 1.5px 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     transform: translateY(-1500%) scale(1);
     opacity: 0;
     transform-origin: center center;
-    /* position: relative;  */
     transform-box: fill;
     animation-name: stackY;
     animation-timing-function: linear;
@@ -151,13 +149,17 @@ span.hov:hover {
 }
 
 .illus .back__end div:nth-child(1) {
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 .illus .back__end div:nth-child(2) {
-    animation-delay: 0.5s;
+    animation-delay: 1s;
 }
 
 .illus .back__end div:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.illus .back__end div:nth-child(4) {
     animation-delay: 0ms;
     border-radius: 0 0 5px 5px;
 }
@@ -171,7 +173,7 @@ span.hov:hover {
     width: 100%;
     text-align: center;
     /* border: 1px solid red; */
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .illus .front__end::after {
@@ -199,6 +201,7 @@ span.hov:hover {
     transform: translateX(100%);
     transition: transform 1s ease;
     z-index: 10;
+    font-family: "Poppins", sans-serif;
 
     /* border: 1px solid red; */
 }
@@ -285,20 +288,7 @@ span.hov:hover {
     }
 }
 
-@media only screen and (max-width: 1200px) {
-    .text {
-        width: 100%;
-        font-size: 1.2rem;
-    }
-    .text p {
-        font-size: 1rem;
-    }
 
-    .illus .front__end > div span,
-    .illus .back__end > div span {
-        display: none;
-    }
-}
 
 @media only screen and (max-width: 1024px) {
     .text {
@@ -314,7 +304,6 @@ span.hov:hover {
         flex-direction: column;
         width: 90%;
         overflow: hidden;
-        /* display: none; */
     }
     .illus .front__end,
     .illus .back__end {
@@ -327,7 +316,7 @@ span.hov:hover {
     }
     .illus .front__end::after,
     .illus .back__end::after {
-        top: -20px;
+        top: -25px;
         text-align: left;
     }
     .illus .front__end > div,

@@ -33,8 +33,16 @@
 export default {
     mounted() {
         const TagCloud = require("TagCloud");
-
+        const SCREEN_WIDTH = window.innerWidth;
         const container = ".tagcloud";
+        let radius = 250;
+        if(SCREEN_WIDTH > 1024) {
+            radius = 250
+        } else if(SCREEN_WIDTH > 800) {
+            radius = 170
+        } else if(SCREEN_WIDTH > 500) {
+            radius = 130
+        }
         const texts = [
             "VueJs",
             "HTML",
@@ -46,16 +54,17 @@ export default {
             "GIT",
             "WEB",
             "NodeJs",
-            "MongoDB",
-            "MySQL",
+            "NoSQL",
+            "SQL",
             "Java",
             "ExpressJs",
             "TailwindCSS",
             "Bootstrap",
             "JQuery",
+            "Typescript",
         ];
         const options = {
-            radius: 250,
+            radius: radius,
         };
 
         TagCloud(container, texts, options);

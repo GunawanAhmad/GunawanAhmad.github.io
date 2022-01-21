@@ -106,8 +106,6 @@ nav .direct:hover .cursor {
 .view-page {
     background-color: var(--main-color);
     position: relative;
-    /* overflow-y: hidden; */
-    height: 100%;
 }
 
 .view-page {
@@ -278,7 +276,7 @@ nav .direct:hover .cursor {
     .view {
         margin: 0px 0 0 0px;
         padding-left: 0;
-        padding: 0;
+        padding: 0 1rem;
     }
     .symbols {
         display: none;
@@ -313,11 +311,4 @@ nav .direct:hover .cursor {
     background: #555;
 }
 
-@media only screen and (max-width: 704px) {
-    :root {
-        --main: #fafafa;
-        --second: #272727;
-        --font-title-section: 52px;
-        --font-body: 18px;
-    }
-}
+

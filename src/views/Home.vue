@@ -1,11 +1,12 @@
 <template>
     <div class="home view-page">
-        <img
-            class="logo-outline"
-            src="../assets/logo-outline-white.svg"
-            alt=""
-        />
-        <div class="container">
+        
+        <div class="home container">
+            <img
+                class="logo-outline"
+                src="../assets/logo-outline-white.svg"
+                alt=""
+            />
             <div>
                 <div class="text">
                     <div class="title">
@@ -68,9 +69,9 @@
                 <img src="../assets/logo.svg" alt="" />
             </div>
         </div>
-        <About />
-        <Portfolio />
-        <Contact />
+        <About class="about"/>
+        <Portfolio class="portfolio"/>
+        <Contact class="contact section"/>
         <div style="height : 3rem"></div>
     </div>
 </template>
@@ -80,8 +81,8 @@
 // import anime from "animejs";
 import TransitionMixin from "../mixins/transition";
 import Portfolio from "../components/portfolio.vue";
-import About from "../components/aboutComp.vue";
-import Contact from "../components/contactComp.vue";
+import About from "./about.vue";
+import Contact from "./contact.vue";
 
 export default {
     name: "Home",

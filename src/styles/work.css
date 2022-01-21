@@ -6,7 +6,7 @@
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     margin-top: 20px;
 }
 
@@ -194,5 +194,12 @@ span.hov:hover {
     .work .work-title {
         font-size: 1.6rem;
         margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    .gallery {
+
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
