@@ -1,3 +1,13 @@
+.contact {
+    background-color: var(--main-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 1250px;
+    margin: auto;
+}
+
 .contact.section {
     margin-top: 5rem;
 }
@@ -98,7 +108,7 @@ form button {
     width: 50%;
     padding-left: 2rem;
     font-family: "Poppins", sans-serif;
-    font-size: var(--font-body);
+    font-size: 22px;
 }
 
 .social a {
@@ -115,13 +125,14 @@ form button {
 }
 
 .media .icon {
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .media p {
     margin-left: 1rem;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1em;
+
 }
 
 .message-status {
@@ -202,51 +213,16 @@ form button {
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .text {
-        width: 90%;
-        font-size: 1.2rem;
-    }
-}
 
-@media only screen and (max-width: 900px) {
-    .contact {
-        flex-direction: column;
-        padding: 0;
-    }
-    .main {
-        flex-direction: column;
-    }
-    .text {
-        align-items: center;
-        margin: 100px 0 0 0;
-        height: auto;
-    }
+
+@media only screen and (max-width: 850px) {
     .social {
-        display: flex;
-        width: 80%;
-        padding: 0;
-        border: none;
-        justify-content: center;
-        margin-top: 1rem;
-    }
-
-    .media p {
-        display: none;
-    }
-    .social a {
-        margin: 0 1rem;
+        font-size: 18px;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .about {
-        padding: 0;
-    }
-    .text {
-        font-size: 1rem;
-    }
-    form {
-        width: 80%;
+@media only screen and (max-width: 680px) {
+    .social {
+        display: none;
     }
 }

@@ -178,7 +178,23 @@
                         )
                     "
                 >
-                    <p>MongoDB</p>
+                    <p>NoSQL</p>
+
+                    <span>
+                        <i class="fas fa-database"></i>
+                    </span>
+                </div>
+                <div
+                    class="mongo stack"
+                    @click="
+                        showInfo(
+                            'MongoDB',
+                            'mongodb',
+                            'MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program.'
+                        )
+                    "
+                >
+                    <p>SQL</p>
 
                     <span>
                         <i class="fas fa-database"></i>

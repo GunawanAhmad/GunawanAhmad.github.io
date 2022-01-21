@@ -111,7 +111,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
 }
 
 .text {
@@ -136,5 +135,11 @@ a {
         color: transparent;
         -webkit-text-stroke: 2px var(--second-color);
         text-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 704px) {
+    .outline-text {
+        top: -4rem;
     }
 }

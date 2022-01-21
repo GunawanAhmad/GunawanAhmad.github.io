@@ -72,13 +72,9 @@
     font-size: var(--font-title-section);
 }
 
-.text p {
-    font-size: 1.2vw;
-}
+
 
 .img {
-    /* border: 1px solid red;
-  width: 50%; */
     margin-right: 5rem;
 }
 
@@ -134,30 +130,12 @@ span.hov:hover {
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .text {
-        width: 100%;
-        font-size: 1.2rem;
-    }
-    .text p {
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width: 780px) {
-    .img {
+@media only screen and (max-width: 650px) {
+    .tagcloud {
         display: none;
     }
-}
 
-@media only screen and (max-width: 700px) {
-    .about {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .text {
-        font-size: 1rem;
+    .container .text {
+        width: 100%;
     }
 }
