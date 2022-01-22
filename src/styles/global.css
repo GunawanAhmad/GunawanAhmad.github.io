@@ -36,7 +36,7 @@
     display: inline-block;
     outline: none;
     background: transparent;
-    font-size: 18px;
+    font-size: var(--font-body);
     cursor: pointer;
     color: var(--second-color);
     text-transform: uppercase;
@@ -143,3 +143,4 @@ a {
         top: -4rem;
     }
 }
+

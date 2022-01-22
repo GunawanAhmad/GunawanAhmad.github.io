@@ -30,6 +30,16 @@
     margin-bottom: 20px;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+}
+
+.buttons .social {
+    display: flex;
+}
+
 .main {
     display: flex;
     align-items: center;
@@ -106,7 +116,6 @@ form button {
 .social {
     font-weight: 400;
     width: 50%;
-    padding-left: 2rem;
     font-family: "Poppins", sans-serif;
     font-size: 22px;
 }
@@ -122,10 +131,12 @@ form button {
     margin: 1rem 0;
     cursor: pointer;
     align-items: center;
+    margin-right: 1rem;
 }
 
 .media .icon {
     font-size: 1em;
+    margin-right: .5rem;
 }
 
 .media p {
