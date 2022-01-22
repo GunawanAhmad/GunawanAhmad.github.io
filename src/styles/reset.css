@@ -17,11 +17,37 @@
     --main-color: var(--main);
     --second-color: var(--second);
     --gray-color: var(--gray);
-    overflow: hidden;
 }
 
-body {
-    overflow: hidden;
+html { height: 100%;
+    overflow:auto;
+    scroll-behavior: smooth; 
+}
+
+body { 
+    height: 100%;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #353535;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #606060;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 
