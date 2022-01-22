@@ -1,6 +1,5 @@
 <template>
     <div class="home view-page">
-        
         <div class="home container">
             <img
                 class="logo-outline"
@@ -69,9 +68,9 @@
                 <img src="../assets/logo.svg" alt="" />
             </div>
         </div>
-        <About class="about"/>
-        <Portfolio class="portfolio"/>
-        <Contact class="contact section"/>
+        <About class="about" />
+        <Portfolio class="portfolio" />
+        <Contact class="contact section" />
         <div style="height : 3rem"></div>
     </div>
 </template>
