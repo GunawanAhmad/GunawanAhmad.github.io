@@ -96,11 +96,6 @@ nav .direct:hover .cursor {
     padding-left: 120px;
     padding-right: 60px;
     /* height: calc(100vh - 80px); */
-    height: 100vh;
-    position: relative;
-    /* overflow: hidden; */
-    overflow: auto;
-    overflow-x: hidden;
 }
 
 .view-page {
@@ -122,7 +117,7 @@ nav .direct:hover .cursor {
     display: flex;
     background-color: var(--main-color);
     justify-content: space-between;
-    overflow-x: hidden;
+    min-height: 100vh;
     /* border: 1px solid red; */
 }
 
@@ -290,25 +285,6 @@ nav .direct:hover .cursor {
     }
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: var(--gray-color);
-    border-radius: 20px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
 
 

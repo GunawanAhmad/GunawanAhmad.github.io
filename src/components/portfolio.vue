@@ -78,7 +78,11 @@
     </div>
 </template>
 <script>
-export default {};
+import TransitionMixin from "../mixins/transition";
+
+export default {
+    mixins: [TransitionMixin],
+};
 </script>
 
 <style scoped src="../styles/work.css"></style>
