@@ -56,42 +56,32 @@
                         v-model="message"
                         class="textarea"
                     ></textarea>
-
-                    <button type="submit" class="btn">
-                        Send Message !
-                    </button>
+                    <div class="buttons">
+                        <div class="social">
+                            <a class="email media" href="mailto:gunawanfsdev@gmail" target="_blank">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a class="twitter media" href="https://twitter.com/Gunawan10x" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="github media" href="https://github.com/GunawanAhmad" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a
+                                class="Linkedln media"
+                                href="https://www.linkedin.com/in/gunawan-nur-ahmad-0148441b7/"
+                                target="_blank"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <button type="submit" class="btn">
+                            Send Message!
+                        </button>
+                    </div>
                 </form>
             </div>
-            <div class="social">
-                <a class="email media" href="mailto:gunawanfsdev@gmail" target="_blank">
-                    <div class="icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <p id="test">Gunawanfsdev@gmail.com</p>
-                </a>
-                <a class="twitter media" href="https://twitter.com/Gunawan10x" target="_blank">
-                    <div class="icon">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                    <p>Gunawan10x</p>
-                </a>
-                <a class="github media" href="https://github.com/GunawanAhmad" target="_blank">
-                    <div class="icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <p>GunawanAhmad</p>
-                </a>
-                <a
-                    class="Linkedln media"
-                    href="https://www.linkedin.com/in/gunawan-nur-ahmad-0148441b7/"
-                    target="_blank"
-                >
-                    <div class="icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <p>Gunawan Ahmad</p>
-                </a>
-            </div>
+            
         </div>
 
         <div class="loader " v-if="isShowingStatus">
