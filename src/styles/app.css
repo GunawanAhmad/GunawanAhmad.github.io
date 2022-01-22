@@ -25,14 +25,13 @@
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #272727;
-
+    background-color: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transition: opacity 500ms ease; */
     pointer-events: none;
     opacity: 1;
+    z-index: 999;
 }
 
 .welcome.show {
@@ -284,7 +283,3 @@ nav .direct:hover .cursor {
         display: none;
     }
 }
-
-
-
-
