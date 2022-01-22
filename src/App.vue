@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <!-- <div class="cursor" ref="cursor" v-if="isMixSupport"></div> -->
+        <div class="cursor" ref="cursor" v-if="isMixSupport"></div>
 
         <!-- <div class="welcome" ref="welcome">
       <svg
@@ -107,7 +107,7 @@ export default {
         this.$store.state.backgroundTransition = this.$refs.transition;
 
         // this.$store.state.hover.push(this.$refs.cursor);
-        // let cursor = this.$refs.cursor;
+        let cursor = this.$refs.cursor;
         // let btn = this.$store.state.hover;
         // btn.forEach((p) => {
         //     p.addEventListener("mouseenter", () => {
@@ -118,13 +118,13 @@ export default {
         //     });
         // });
 
-        // document.addEventListener("mousemove", (e) => {
-        //     // cursor.setAttribute("style", "display : none");
-        //     cursor.setAttribute(
-        //         "style",
-        //         `top : ${e.pageY}px; left : ${e.pageX}px`
-        //     );
-        // });
+        document.addEventListener("mousemove", (e) => {
+            // cursor.setAttribute("style", "display : none");
+            cursor.setAttribute(
+                "style",
+                `top : ${e.clientY}px; left : ${e.clientX}px`
+            );
+        });
         // document.querySelector(".view-page").addEventListener("scroll", () => {
         //     console.log("hei");
         //     cursor.style.display = "none";
