@@ -165,12 +165,14 @@ span.hov:hover {
 }
 
 @media only screen and (max-width: 1024px) {
+    .text {
+        text-align: center;
+    }
     .work-page .title-page {
         font-size: 2rem;
     }
     .work-list {
         margin-top: 0;
-        width: 80%;
     }
     .work-list .work {
         flex-direction: column;
@@ -197,9 +199,8 @@ span.hov:hover {
     }
 }
 
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 600px) {
     .gallery {
-
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }

@@ -117,7 +117,7 @@ nav .direct:hover .cursor {
     background-color: var(--main-color);
     justify-content: space-between;
     min-height: 100vh;
-    /* border: 1px solid red; */
+    overflow: hidden;
 }
 
 .fade-enter {
@@ -276,9 +276,6 @@ nav .direct:hover .cursor {
         display: none;
     }
 
-    #app {
-        display: block;
-    }
     .cursor {
         display: none;
     }
