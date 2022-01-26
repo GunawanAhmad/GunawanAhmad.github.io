@@ -33,7 +33,7 @@
                 Visit my
                 <a
                     target="_blank"
-                    href="https://linkedin.com/in/gunawan-ahmad-0148441b7"
+                    href="https://www.linkedin.com/in/gunawan-nur-ahmad-0148441b7/"
                     class="link linkedln"
                     >Linkedln</a
                 >
