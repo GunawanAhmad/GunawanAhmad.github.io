@@ -32,6 +32,46 @@
     pointer-events: none;
     opacity: 1;
     z-index: 999;
+    font-family: "Poppins", sans-serif;
+    color: var(--second-color);
+    font-size: var(--font-title-section);
+    letter-spacing: 5px;
+}
+
+.welcome h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.welcome h1 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform: translateY(-100%);
+    animation: welcome_title 1.5s cubic-bezier(0,.38,0,1.73) forwards;
+}
+
+.welcome h1 span:nth-child(1) {
+    animation-delay: 0ms;
+}
+.welcome h1 span:nth-child(2) {
+    animation-delay: 200ms;
+}
+
+.welcome h1 span:nth-child(3) {
+    animation-delay: 400ms;
+}
+
+@keyframes welcome_title {
+    from {
+        transform: translateY(-100%);
+    } 
+    to {
+        transform: translate(0);
+    }
 }
 
 .welcome.show {
