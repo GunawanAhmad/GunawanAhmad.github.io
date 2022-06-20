@@ -25,6 +25,7 @@
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 .gallery > div::before {
@@ -50,12 +51,15 @@
     word-break: keep-all;
     word-wrap: normal;
     white-space: nowrap;
+    pointer-events: none;
+    z-index: 3;
+    opacity: 0;
 }
 
 .gallery > div:hover:before {
     height: 50%;
     width: 50%;
-    z-index: 2;
+    opacity: 1;
 }
 
 .gallery > div:hover img {
@@ -71,6 +75,8 @@
     height: 100%;
     width: 100%;
     background-color: rgba(240, 240, 240, 0.8);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .gallery > div > a img {
