@@ -25,6 +25,11 @@
         </div>
         <div class="gallery">
             <div>
+                <a href="https://mangjasa.com/" target="_blank">
+                    <img src="../assets/mangjasa_box.png" alt="" />
+                </a>
+            </div>
+            <div>
                 <a
                     href="https://gunawanahmad.github.io/pathfinding-visualizer/#/"
                     target="_blank"

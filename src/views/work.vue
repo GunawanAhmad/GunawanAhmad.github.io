@@ -34,11 +34,11 @@
                     </p>
                     <div class="tools">
                         <p>
-                            Code Tools :
+                            Code Tools:
                             <span>{{ work.codeTools.join(", ") }}</span>
                         </p>
                         <p class="design">
-                            Design : <span>{{ work.design }}</span>
+                            Design: <span>{{ work.design }}</span>
                         </p>
                     </div>
                     <div class="links">
@@ -96,6 +96,16 @@ export default {
                     img: "pathfinding-visualizer.png",
                     codeTools: ["Vue JS", "SCSS"],
                     design: "Design by Me",
+                },
+                {
+                    title: "Mangjasa",
+                    description:
+                        "Mangjasa was my work during my community service as an assistant professor in college. I was responsible for making the UI interfaces and worked with the UI designer and backend developer to build the system.",
+                    source: "",
+                    link: "https://mangjasa.com/",
+                    img: "mangjasa.png",
+                    codeTools: ["ReactJs"],
+                    design: "Design by Haviza Aufa Labiba",
                 },
                 {
                     title: "Radio and Checkbox Input Generator",
