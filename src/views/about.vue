@@ -14,15 +14,11 @@
                     <span class="hov">e</span>
                 </h1>
                 <p class="desc">
-                    My name is Gunawan Nur Ahmad, I'm a Front End Developer and
-                    currently studying Computer Science. I'm from Lampung,
-                    Indonesia.
+                    Hi, I'm Gunawan Nur Ahmad, a frontend developer and computer science student. I specialize in creating dynamic and responsive user interfaces using JavaScript, React, and Vue.
                     <br /><br />
-                    Well organised person, problem solver, independent with high
-                    intention to detail. <br /><br />
-                    In my works I always try to combine aesthetic with
-                    functional aspects, looking for the right balance to
-                    communicate without annoying.
+                    As a computer science student, I'm constantly learning and improving my abilities. I've worked on projects ranging from small websites to large-scale web applications, and I'm committed to providing high-quality work that fulfills both the demands of the user and the specifications of the project.
+                    <br /><br />
+                    Please get in touch if you're seeking for a frontend developer that is passionate about designing engaging and intuitive user interfaces, or if you have an intriguing project you'd like to explore. I'm thrilled to collaborate with you and help you realize your vision.
                 </p>
             </div>
             <div class="tagcloud"></div>
