@@ -24,8 +24,8 @@ jobs:
       - name: Build app
         run: npm run build
 
-      - name: Deploy to gh-pages
+      - name: Deploy to evelyn1
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          branch: gh-pages
+          branch: evelyn1
           folder: dist
