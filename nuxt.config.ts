@@ -2,9 +2,15 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  modules: ['@nuxtjs/sanity'],
   sanity: {
     projectId: '0wqodvjq',
-    apiVersion: 'YYYY-MM-DD',
-    dataset: 'portfolio-site',
+    apiVersion: '2021-10-21',
+    dataset: 'portfolio',
+  },
+  runtimeConfig: {
+    sanity: {
+      token: process.env.NUXT_SANITY_TOKEN,
+    },
   },
 });
