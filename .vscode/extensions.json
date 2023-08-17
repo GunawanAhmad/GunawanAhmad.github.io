@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "cpylua.language-postcss",
+    "nuxtr.nuxtr-vscode",
+    "yoavbls.pretty-ts-errors",
+    "antfu.unocss",
+    "vue.volar"
+  ]
+}
