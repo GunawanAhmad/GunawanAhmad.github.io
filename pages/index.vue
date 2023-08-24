@@ -1,8 +1,8 @@
 <script setup>
-const query = groq`*[_type == "portfolio"]`;
-const { data } = useSanityQuery(query);
+// const query = groq`*[_type == "portfolio"]`;
+// const { data } = useSanityQuery(query);
 </script>
 
 <template>
-  <h1>hei</h1>
+  <h1 class="text-secondary">Hei</h1>
 </template>

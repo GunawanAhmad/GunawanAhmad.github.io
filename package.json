@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@nuxtjs/sanity": "^1.8.1",
-    "@sanity/client": "^6.4.6"
+    "@sanity/client": "^6.4.6",
+    "typescript": "^5.1.6"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
