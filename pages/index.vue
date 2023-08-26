@@ -1,8 +1,16 @@
-<script setup>
+<script>
+import Home from '@/components/menu.vue';
+
+export default {
+  components: {
+    Home,
+  },
+};
+
 // const query = groq`*[_type == "portfolio"]`;
 // const { data } = useSanityQuery(query);
 </script>
 
 <template>
-  <h1 class="text-secondary">Hei</h1>
+  <Home />
 </template>
