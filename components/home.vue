@@ -1,11 +1,18 @@
-<script>
+<script setup>
+import { onMounted, ref } from 'vue';
+
 import CSButton from '@/components/button.vue';
 
-export default {
-  components: {
-    CSButton,
-  },
-};
+const eyeBall = ref(null);
+onMounted(() => {
+  document.onmousemove = function (event) {
+    const x = `${(event.clientX * 100) / window.innerWidth}%`;
+    const y = `${(event.clientY * 100) / window.innerHeight}%`;
+    eyeBall.value.style.left = x;
+    eyeBall.value.style.top = y;
+    eyeBall.value.style.transform = `translate(-${x}, -${y})`;
+  };
+});
 </script>
 
 <template>
@@ -19,7 +26,10 @@ export default {
         <span class="flex items-center">
           Web devel
           <span class="relative block h-10 w-10 rounded-full bg-secondary">
-            <span class="block w-5 rounded-full bg-primary absolute inset-1/2 -translate-1/2 h-5">
+            <span
+              ref="eyeBall"
+              class="block w-5 rounded-full bg-primary absolute inset-1/2 -translate-1/2 h-5"
+            >
               <span class="block w-2 h-2 rounded-full bg-secondary absolute inset-[3px]" />
             </span>
           </span>
